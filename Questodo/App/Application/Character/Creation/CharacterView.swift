@@ -20,6 +20,10 @@ struct CharacterView: View {
                 .resizable()
                 .scaledToFit()
 
+            character.skin.noseImage
+                .resizable()
+                .scaledToFit()
+
             Image("hair_\(character.style.hair.form.rawValue)_\(character.style.hair.color.rawValue)")
                 .resizable()
                 .scaledToFit()

@@ -82,6 +82,12 @@ internal enum Asset {
       internal static let headBrown = ImageAsset(name: "head_brown")
       internal static let headLight = ImageAsset(name: "head_light")
     }
+    internal enum Nose {
+      internal static let noseAmber = ImageAsset(name: "nose_amber")
+      internal static let noseBlack = ImageAsset(name: "nose_black")
+      internal static let noseBrown = ImageAsset(name: "nose_brown")
+      internal static let noseLight = ImageAsset(name: "nose_light")
+    }
   }
   internal enum Colors {
     internal enum Character {

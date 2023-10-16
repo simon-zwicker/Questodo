@@ -39,4 +39,13 @@ enum CharacterSkin: String, CaseIterable {
         case .black: Asset.Characters.Body.bodyBlack.swiftUIImage
         }
     }
+
+    var noseImage: Image {
+        switch self {
+        case .light: Asset.Characters.Nose.noseLight.swiftUIImage
+        case .amber: Asset.Characters.Nose.noseAmber.swiftUIImage
+        case .brown: Asset.Characters.Nose.noseBrown.swiftUIImage
+        case .black: Asset.Characters.Nose.noseBlack.swiftUIImage
+        }
+    }
 }
