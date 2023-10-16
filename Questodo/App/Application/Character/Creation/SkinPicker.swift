@@ -36,23 +36,24 @@ struct HairColorPicker: View {
 
     var body: some View {
         HStack(spacing: 20.0) {
-//            ForEach(skinPalette, id: \.self) { skin in
-//                Circle()
-//                    .fill(skin.skinColor)
-//                    .frame(width: 40.0, height: 40.0)
-//                    .overlay(
-//                        Circle()
-//                            .stroke(Color.white, lineWidth: selected == skin ? 3: 0)
-//                    )
-//                    .button {
-//                        selected = skin
-//                    }
-//            }
+            ForEach(hairColorPalette, id: \.self) { hair in
+                Circle()
+                    .fill(hair.hairColor)
+                    .frame(width: 25.0, height: 25.0)
+                    .overlay(
+                        Circle()
+                            .stroke(Color.white, lineWidth: selected == hair ? 3: 0)
+                    )
+                    .button {
+                        selected = hair
+                    }
+            }
         }
         .padding()
     }
 }
 
 #Preview {
-    SkinPicker(selected: .constant(.light))
+//    SkinPicker(selected: .constant(.light))
+    HairColorPicker(selected: .constant(.ash))
 }

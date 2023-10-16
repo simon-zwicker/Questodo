@@ -23,6 +23,13 @@ struct CharacterCreationView: View {
                     SkinPicker(selected: $character.skin)
                 }
 
+                VStack(spacing: 5.0) {
+                    Text("Choose a Hair Color")
+                        .font(.Reg.small)
+                        .foregroundStyle(.textNormal)
+                    HairColorPicker(selected: $character.style.hair.color)
+                }
+
                 ZStack {
                     Asset.Assets.bgForest.swiftUIImage
                         .resizable()
@@ -32,6 +39,25 @@ struct CharacterCreationView: View {
                     CharacterView(character: $character)
                         .frame(height: 150.0)
                         .offset(y: 20.0)
+
+                    HStack {
+                        Spacer()
+                        Image(systemName: "chevron.left")
+                            .foregroundColor(.mainBackground)
+                            .font(.Bold.big)
+                            .button {
+                                character.style.hair.form = character.style.hair.form.previous
+                            }
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(.mainBackground)
+                            .font(.Bold.big)
+                            .button {
+                                character.style.hair.form = character.style.hair.form.next
+                            }
+
+                        Spacer()
+                    }
                 }
                 .frame(height: 200.0)
                 .cornerRadius(20.0)
