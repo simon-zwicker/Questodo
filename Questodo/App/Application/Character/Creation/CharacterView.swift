@@ -24,7 +24,19 @@ struct CharacterView: View {
                 .resizable()
                 .scaledToFit()
 
-            Image("hair_\(character.style.hair.form.rawValue)_\(character.style.hair.color.rawValue)")
+            Image("hair_\(character.hair.form.rawValue)_\(character.hair.color.rawValue)")
+                .resizable()
+                .scaledToFit()
+
+            character.equip.chest.image
+                .resizable()
+                .scaledToFit()
+
+            character.equip.pant.image
+                .resizable()
+                .scaledToFit()
+
+            character.equip.shoe.image
                 .resizable()
                 .scaledToFit()
         }

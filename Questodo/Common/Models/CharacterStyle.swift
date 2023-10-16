@@ -7,20 +7,6 @@
 
 import Foundation
 
-struct CharacterStyle: Identifiable {
-    let id: UUID
-    var skin: CharacterSkin
-    var hair: CharacterHair
-    var equip: CharacterEquip
-
-    init(skin: CharacterSkin = .light, hair: CharacterHair = .init(), equip: CharacterEquip = .init()) {
-        self.id = UUID()
-        self.skin = skin
-        self.hair = hair
-        self.equip = equip
-    }
-}
-
 struct CharacterHair: Identifiable {
     let id: UUID
     var form: CharacterHairType
@@ -35,12 +21,14 @@ struct CharacterHair: Identifiable {
 
 struct CharacterEquip: Identifiable {
     let id: UUID
-    var torso: String
-    var weapon: String
+    var chest: Equip.Chest
+    var pant: Equip.Pant
+    var shoe: Equip.Shoe
 
-    init(torso: String = "leather", weapon: String = "longsword") {
+    init(chest: Equip.Chest = .standard, pant: Equip.Pant = .standard, shoe: Equip.Shoe = .standard) {
         self.id = UUID()
-        self.torso = torso
-        self.weapon = weapon
+        self.chest = chest
+        self.pant = pant
+        self.shoe = shoe
     }
 }

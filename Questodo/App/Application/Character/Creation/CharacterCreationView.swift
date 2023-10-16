@@ -14,69 +14,104 @@ struct CharacterCreationView: View {
         ZStack {
             Color.mainBackground.ignoresSafeArea()
 
-            VStack(spacing: 40.0) {
-
-                VStack(spacing: 5.0) {
-                    Text("Choose a Skin Color")
-                        .font(.Reg.small)
-                        .foregroundStyle(.textNormal)
-                    SkinPicker(selected: $character.skin)
-                }
-
-                VStack(spacing: 5.0) {
-                    Text("Choose a Hair Color")
-                        .font(.Reg.small)
-                        .foregroundStyle(.textNormal)
-                    HairColorPicker(selected: $character.style.hair.color)
-                }
-
+            VStack(spacing: 20.0) {
                 ZStack {
                     Asset.Assets.bgForest.swiftUIImage
                         .resizable()
                         .scaledToFill()
-                        .clipped()
+                        .ignoresSafeArea()
 
-                    CharacterView(character: $character)
-                        .frame(height: 150.0)
-                        .offset(y: 20.0)
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Image(systemName: "chevron.left")
+                                .foregroundColor(.mainBackground)
+                                .font(.Bold.big)
+                                .button {
+                                    character.hair.form = character.hair.form.previous
+                                }
+                                .offset(y: -30.0)
 
-                    HStack {
-                        Spacer()
-                        Image(systemName: "chevron.left")
-                            .foregroundColor(.mainBackground)
-                            .font(.Bold.big)
-                            .button {
-                                character.style.hair.form = character.style.hair.form.previous
-                            }
-                        Spacer()
-                        Image(systemName: "chevron.right")
-                            .foregroundColor(.mainBackground)
-                            .font(.Bold.big)
-                            .button {
-                                character.style.hair.form = character.style.hair.form.next
+                            VStack {
+                                CharacterView(character: $character)
+                                    .frame(height: 150.0)
+                                    .offset(y: -5.0)
                             }
 
-                        Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundColor(.mainBackground)
+                                .font(.Bold.big)
+                                .button {
+                                    character.hair.form = character.hair.form.next
+                                }
+                                .offset(y: -30.0)
+                        }
                     }
                 }
-                .frame(height: 200.0)
-                .cornerRadius(20.0)
+                .frame(maxWidth: UIScreen.main.bounds.width, minHeight: 100.0, maxHeight: 100.0)
 
-                Spacer()
+                VStack {
+                    VStack(alignment: .leading, spacing: 5.0) {
+                        Text("Skin color")
+                            .font(.Bold.small)
+                            .foregroundStyle(.textNormal)
+                            .padding(.leading, 15.0)
+                        SkinPicker(selected: $character.skin)
+                    }
 
-                Text("Save Character")
-                    .foregroundColor(.white)
-                    .font(.Bold.big)
+                    VStack(alignment: .leading, spacing: 5.0) {
+                        Text("Haircolor")
+                            .font(.Bold.small)
+                            .foregroundStyle(.textNormal)
+                            .padding(.leading, 15.0)
+                        HairColorPicker(selected: $character.hair.color)
+                    }
+
+                    Divider()
+
+                    VStack(alignment: .leading) {
+                        Text("Playername")
+                            .font(.Bold.regular)
+                            .foregroundStyle(.textNormal)
+
+                        TextField("Enter Name", text: $character.name)
+                            .font(.Bold.big)
+                    }
                     .padding()
-                    .background(Color.brown)
+
+                    Spacer()
+
+                    HStack {
+                        Asset.Assets.swordButton.swiftUIImage
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20.0)
+                            .padding(.leading, 15.0)
+
+                        Text("Start Adventure")
+                            .foregroundColor(.mainBackground)
+                            .font(.Bold.regular)
+                            .padding(.vertical, 15.0)
+
+                        Asset.Assets.swordButton.swiftUIImage
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20.0)
+                            .padding(.trailing, 15.0)
+                    }
+                    .background(Color.textNormal)
                     .cornerRadius(10.0)
                     .button {
-                        character.save()
+
                     }
                     .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .padding(.bottom, 20.0)
+                }
+                .padding(.top, 60.0)
             }
-            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-            .padding()
+        }
+        .onTapGesture {
+            hideKeyboard()
         }
     }
 }

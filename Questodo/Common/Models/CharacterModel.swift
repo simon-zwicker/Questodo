@@ -9,15 +9,15 @@ import Foundation
 
 @Observable
 class CharacterModel {
-    var style: CharacterStyle
+    var name: String
     var skin: CharacterSkin
+    var hair: CharacterHair
+    var equip: CharacterEquip
 
-    init(style: CharacterStyle = .init()) {
-        self.style = style
-        self.skin = style.skin
-    }
-
-    func save() {
-        style.skin = skin
+    init(name: String = "", skin: CharacterSkin = .light, hair: CharacterHair = .init(), equip: CharacterEquip = .init()) {
+        self.name = name
+        self.skin = skin
+        self.hair = hair
+        self.equip = equip
     }
 }

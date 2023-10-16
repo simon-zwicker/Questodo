@@ -12,48 +12,35 @@ struct SkinPicker: View {
     let skinPalette: [CharacterSkin] = CharacterSkin.allCases
 
     var body: some View {
-        HStack(spacing: 20.0) {
-            ForEach(skinPalette, id: \.self) { skin in
-                Circle()
-                    .fill(skin.skinColor)
-                    .frame(width: 40.0, height: 40.0)
-                    .overlay(
+        ScrollViewReader { proxy in
+            ScrollView(.horizontal) {
+                HStack(spacing: 20.0) {
+                    ForEach(skinPalette, id: \.self) { skin in
                         Circle()
-                            .stroke(Color.white, lineWidth: selected == skin ? 3: 0)
-                    )
-                    .button {
-                        selected = skin
+                            .fill(skin.skinColor)
+                            .frame(width: 40.0, height: 40.0)
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.white, lineWidth: selected == skin ? 3: 0)
+                            )
+                            .button {
+                                selected = skin
+                                scrollTo(item: skin, scrollView: proxy)
+                            }
                     }
+                }
+                .padding()
             }
         }
-        .padding()
     }
-}
 
-struct HairColorPicker: View {
-    @Binding var selected: CharacterHairColor
-    let hairColorPalette: [CharacterHairColor] = CharacterHairColor.allCases
-
-    var body: some View {
-        HStack(spacing: 20.0) {
-            ForEach(hairColorPalette, id: \.self) { hair in
-                Circle()
-                    .fill(hair.hairColor)
-                    .frame(width: 25.0, height: 25.0)
-                    .overlay(
-                        Circle()
-                            .stroke(Color.white, lineWidth: selected == hair ? 3: 0)
-                    )
-                    .button {
-                        selected = hair
-                    }
-            }
+    private func scrollTo(item: CharacterSkin, scrollView: ScrollViewProxy) {
+        withAnimation {
+            scrollView.scrollTo(item, anchor: .center)
         }
-        .padding()
     }
 }
 
 #Preview {
-//    SkinPicker(selected: .constant(.light))
-    HairColorPicker(selected: .constant(.ash))
+    SkinPicker(selected: .constant(.light))
 }

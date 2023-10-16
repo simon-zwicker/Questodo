@@ -33,6 +33,7 @@ internal enum Asset {
     internal static let gold = ImageAsset(name: "gold")
     internal static let health = ImageAsset(name: "health")
     internal static let sword = ImageAsset(name: "sword")
+    internal static let swordButton = ImageAsset(name: "swordButton")
     internal static let torsoLeatherBrown = ImageAsset(name: "torso_leather_brown")
   }
   internal enum Characters {
@@ -41,6 +42,17 @@ internal enum Asset {
       internal static let bodyBlack = ImageAsset(name: "body_black")
       internal static let bodyBrown = ImageAsset(name: "body_brown")
       internal static let bodyLight = ImageAsset(name: "body_light")
+    }
+    internal enum Equip {
+      internal enum Chest {
+        internal static let chestDefault = ImageAsset(name: "chest_default")
+      }
+      internal enum Pant {
+        internal static let pantDefault = ImageAsset(name: "pant_default")
+      }
+      internal enum Shoe {
+        internal static let shoeDefault = ImageAsset(name: "shoe_default")
+      }
     }
     internal enum Hairs {
       internal static let hairMessyAsh = ImageAsset(name: "hair_messy_ash")

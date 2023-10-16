@@ -24,6 +24,8 @@
 		4F3CE1FE2ACDE66800312B74 /* TodoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1FD2ACDE66800312B74 /* TodoFeature.swift */; };
 		4F3CE2002ACDE67300312B74 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1FF2ACDE67300312B74 /* TodoView.swift */; };
 		4F3EEB522ACAFC04001ABEC8 /* Characters.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EEB512ACAFC04001ABEC8 /* Characters.xcassets */; };
+		4F4B36D62ADD66FF005E2AC1 /* CharacterEquip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B36D52ADD66FF005E2AC1 /* CharacterEquip.swift */; };
+		4F4B36D82ADD6E3C005E2AC1 /* HairColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B36D72ADD6E3C005E2AC1 /* HairColorPicker.swift */; };
 		4F9811E22AD1890000BCCD5E /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9811E12AD1890000BCCD5E /* ColorPicker.swift */; };
 		4F9811E42AD1891C00BCCD5E /* ColorPickerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */; };
 		4FA0A80A2ADA81B50075DDDA /* SkinPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A8092ADA81B50075DDDA /* SkinPicker.swift */; };
@@ -75,6 +77,8 @@
 		4F3CE1FD2ACDE66800312B74 /* TodoFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoFeature.swift; sourceTree = "<group>"; };
 		4F3CE1FF2ACDE67300312B74 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		4F3EEB512ACAFC04001ABEC8 /* Characters.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Characters.xcassets; sourceTree = "<group>"; };
+		4F4B36D52ADD66FF005E2AC1 /* CharacterEquip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEquip.swift; sourceTree = "<group>"; };
+		4F4B36D72ADD6E3C005E2AC1 /* HairColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairColorPicker.swift; sourceTree = "<group>"; };
 		4F9811E12AD1890000BCCD5E /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerFeature.swift; sourceTree = "<group>"; };
 		4FA0A8092ADA81B50075DDDA /* SkinPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinPicker.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				4F3CE1D42ACD990000312B74 /* Constants.swift */,
 				4FA0A8112ADA89380075DDDA /* CharacterSkin.swift */,
 				4FA0A8132ADAB5030075DDDA /* CharacterHairColor.swift */,
+				4F4B36D52ADD66FF005E2AC1 /* CharacterEquip.swift */,
 			);
 			path = Enumerates;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				4FA0A8092ADA81B50075DDDA /* SkinPicker.swift */,
 				4FA0A80B2ADA82AA0075DDDA /* CharacterCreationView.swift */,
 				4FA0A80D2ADA854E0075DDDA /* CharacterView.swift */,
+				4F4B36D72ADD6E3C005E2AC1 /* HairColorPicker.swift */,
 			);
 			path = Creation;
 			sourceTree = "<group>";
@@ -544,6 +550,7 @@
 				4F3CE1E92ACD990000312B74 /* ButtonWrapperModifier.swift in Sources */,
 				4FA0A80A2ADA81B50075DDDA /* SkinPicker.swift in Sources */,
 				4F3CE2002ACDE67300312B74 /* TodoView.swift in Sources */,
+				4F4B36D62ADD66FF005E2AC1 /* CharacterEquip.swift in Sources */,
 				4F3CE1E82ACD990000312B74 /* View.swift in Sources */,
 				4F3CE1F42ACD9ADF00312B74 /* AQ.swift in Sources */,
 				4F3CE1D22ACD98ED00312B74 /* AppFont.swift in Sources */,
@@ -563,6 +570,7 @@
 				4FA0A8102ADA890C0075DDDA /* CharacterModel.swift in Sources */,
 				4FFF61C22AC6D8DB002FF2C4 /* QuestodoApp.swift in Sources */,
 				4F0CF6AF2ACF837E0089A6BE /* Color.swift in Sources */,
+				4F4B36D82ADD6E3C005E2AC1 /* HairColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
