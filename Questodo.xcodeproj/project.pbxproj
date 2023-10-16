@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F0CF6A82ACEE1B80089A6BE /* CharacterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CF6A72ACEE1B80089A6BE /* CharacterStyle.swift */; };
+		4F0CF6AB2ACEE3270089A6BE /* CharacterCreatorFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CF6AA2ACEE3270089A6BE /* CharacterCreatorFeature.swift */; };
+		4F0CF6AD2ACEE3570089A6BE /* CharacterCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CF6AC2ACEE3570089A6BE /* CharacterCreatorView.swift */; };
+		4F0CF6AF2ACF837E0089A6BE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CF6AE2ACF837E0089A6BE /* Color.swift */; };
+		4F3CE1CD2ACD982300312B74 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 4F3CE1CC2ACD982300312B74 /* ComposableArchitecture */; };
+		4F3CE1D02ACD984300312B74 /* MainHeaderFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1CF2ACD984300312B74 /* MainHeaderFeature.swift */; };
+		4F3CE1D22ACD98ED00312B74 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1D12ACD98ED00312B74 /* AppFont.swift */; };
+		4F3CE1E32ACD990000312B74 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1D42ACD990000312B74 /* Constants.swift */; };
+		4F3CE1E52ACD990000312B74 /* PreviewColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1D72ACD990000312B74 /* PreviewColorScheme.swift */; };
+		4F3CE1E82ACD990000312B74 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1DE2ACD990000312B74 /* View.swift */; };
+		4F3CE1E92ACD990000312B74 /* ButtonWrapperModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1E02ACD990000312B74 /* ButtonWrapperModifier.swift */; };
+		4F3CE1EF2ACD99D000312B74 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F3CE1EE2ACD99D000312B74 /* Colors.xcassets */; };
+		4F3CE1F22ACD9A4600312B74 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1F12ACD9A4600312B74 /* MainHeaderView.swift */; };
+		4F3CE1F42ACD9ADF00312B74 /* AQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1F32ACD9ADF00312B74 /* AQ.swift */; };
+		4F3CE1FE2ACDE66800312B74 /* TodoFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1FD2ACDE66800312B74 /* TodoFeature.swift */; };
+		4F3CE2002ACDE67300312B74 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1FF2ACDE67300312B74 /* TodoView.swift */; };
+		4F3EEB522ACAFC04001ABEC8 /* Characters.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EEB512ACAFC04001ABEC8 /* Characters.xcassets */; };
+		4F9811E22AD1890000BCCD5E /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9811E12AD1890000BCCD5E /* ColorPicker.swift */; };
+		4F9811E42AD1891C00BCCD5E /* ColorPickerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */; };
+		4FA0A80A2ADA81B50075DDDA /* SkinPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A8092ADA81B50075DDDA /* SkinPicker.swift */; };
+		4FA0A80C2ADA82AA0075DDDA /* CharacterCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A80B2ADA82AA0075DDDA /* CharacterCreationView.swift */; };
+		4FA0A80E2ADA854E0075DDDA /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A80D2ADA854E0075DDDA /* CharacterView.swift */; };
+		4FA0A8102ADA890C0075DDDA /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A80F2ADA890C0075DDDA /* CharacterModel.swift */; };
+		4FA0A8122ADA89380075DDDA /* CharacterSkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A8112ADA89380075DDDA /* CharacterSkin.swift */; };
+		4FA0A8142ADAB5030075DDDA /* CharacterHairColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A8132ADAB5030075DDDA /* CharacterHairColor.swift */; };
+		4FFF61C22AC6D8DB002FF2C4 /* QuestodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF61C12AC6D8DB002FF2C4 /* QuestodoApp.swift */; };
+		4FFF61C62AC6D8DC002FF2C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFF61C52AC6D8DC002FF2C4 /* Assets.xcassets */; };
+		4FFF61C92AC6D8DC002FF2C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFF61C82AC6D8DC002FF2C4 /* Preview Assets.xcassets */; };
+		4FFF61D32AC6D8DC002FF2C4 /* QuestodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF61D22AC6D8DC002FF2C4 /* QuestodoTests.swift */; };
+		4FFF61DD2AC6D8DC002FF2C4 /* QuestodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF61DC2AC6D8DC002FF2C4 /* QuestodoUITests.swift */; };
+		4FFF61DF2AC6D8DC002FF2C4 /* QuestodoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF61DE2AC6D8DC002FF2C4 /* QuestodoUITestsLaunchTests.swift */; };
+		4FFF61EF2AC6D8F5002FF2C4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF61EE2AC6D8F5002FF2C4 /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FFF61CF2AC6D8DC002FF2C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FFF61B62AC6D8DB002FF2C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FFF61BD2AC6D8DB002FF2C4;
+			remoteInfo = Questodo;
+		};
+		4FFF61D92AC6D8DC002FF2C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FFF61B62AC6D8DB002FF2C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FFF61BD2AC6D8DB002FF2C4;
+			remoteInfo = Questodo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F0CF6A72ACEE1B80089A6BE /* CharacterStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStyle.swift; sourceTree = "<group>"; };
+		4F0CF6AA2ACEE3270089A6BE /* CharacterCreatorFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreatorFeature.swift; sourceTree = "<group>"; };
+		4F0CF6AC2ACEE3570089A6BE /* CharacterCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreatorView.swift; sourceTree = "<group>"; };
+		4F0CF6AE2ACF837E0089A6BE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4F3CE1CF2ACD984300312B74 /* MainHeaderFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderFeature.swift; sourceTree = "<group>"; };
+		4F3CE1D12ACD98ED00312B74 /* AppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		4F3CE1D42ACD990000312B74 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4F3CE1D72ACD990000312B74 /* PreviewColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewColorScheme.swift; sourceTree = "<group>"; };
+		4F3CE1DE2ACD990000312B74 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		4F3CE1E02ACD990000312B74 /* ButtonWrapperModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWrapperModifier.swift; sourceTree = "<group>"; };
+		4F3CE1EE2ACD99D000312B74 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		4F3CE1F12ACD9A4600312B74 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		4F3CE1F32ACD9ADF00312B74 /* AQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQ.swift; sourceTree = "<group>"; };
+		4F3CE1FD2ACDE66800312B74 /* TodoFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoFeature.swift; sourceTree = "<group>"; };
+		4F3CE1FF2ACDE67300312B74 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		4F3EEB512ACAFC04001ABEC8 /* Characters.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Characters.xcassets; sourceTree = "<group>"; };
+		4F9811E12AD1890000BCCD5E /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerFeature.swift; sourceTree = "<group>"; };
+		4FA0A8092ADA81B50075DDDA /* SkinPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinPicker.swift; sourceTree = "<group>"; };
+		4FA0A80B2ADA82AA0075DDDA /* CharacterCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreationView.swift; sourceTree = "<group>"; };
+		4FA0A80D2ADA854E0075DDDA /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		4FA0A80F2ADA890C0075DDDA /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		4FA0A8112ADA89380075DDDA /* CharacterSkin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSkin.swift; sourceTree = "<group>"; };
+		4FA0A8132ADAB5030075DDDA /* CharacterHairColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHairColor.swift; sourceTree = "<group>"; };
+		4FFF61BE2AC6D8DB002FF2C4 /* Questodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Questodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FFF61C12AC6D8DB002FF2C4 /* QuestodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestodoApp.swift; sourceTree = "<group>"; };
+		4FFF61C52AC6D8DC002FF2C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FFF61C82AC6D8DC002FF2C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4FFF61CE2AC6D8DC002FF2C4 /* QuestodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FFF61D22AC6D8DC002FF2C4 /* QuestodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestodoTests.swift; sourceTree = "<group>"; };
+		4FFF61D82AC6D8DC002FF2C4 /* QuestodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FFF61DC2AC6D8DC002FF2C4 /* QuestodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestodoUITests.swift; sourceTree = "<group>"; };
+		4FFF61DE2AC6D8DC002FF2C4 /* QuestodoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestodoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4FFF61EE2AC6D8F5002FF2C4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FFF61BB2AC6D8DB002FF2C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3CE1CD2ACD982300312B74 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FFF61CB2AC6D8DC002FF2C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FFF61D52AC6D8DC002FF2C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F0CF6A92ACEE3180089A6BE /* CharacterCreator */ = {
+			isa = PBXGroup;
+			children = (
+				4F0CF6AA2ACEE3270089A6BE /* CharacterCreatorFeature.swift */,
+				4F0CF6AC2ACEE3570089A6BE /* CharacterCreatorView.swift */,
+			);
+			path = CharacterCreator;
+			sourceTree = "<group>";
+		};
+		4F3CE1CE2ACD982A00312B74 /* MainHeader */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE1CF2ACD984300312B74 /* MainHeaderFeature.swift */,
+				4F3CE1F12ACD9A4600312B74 /* MainHeaderView.swift */,
+			);
+			path = MainHeader;
+			sourceTree = "<group>";
+		};
+		4F3CE1D32ACD990000312B74 /* Enumerates */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE1D42ACD990000312B74 /* Constants.swift */,
+				4FA0A8112ADA89380075DDDA /* CharacterSkin.swift */,
+				4FA0A8132ADAB5030075DDDA /* CharacterHairColor.swift */,
+			);
+			path = Enumerates;
+			sourceTree = "<group>";
+		};
+		4F3CE1D52ACD990000312B74 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE1D72ACD990000312B74 /* PreviewColorScheme.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4F3CE1D82ACD990000312B74 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE1D92ACD990000312B74 /* Assets */,
+				4F3CE1DB2ACD990000312B74 /* Translations */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		4F3CE1D92ACD990000312B74 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE1F32ACD9ADF00312B74 /* AQ.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4F3CE1DB2ACD990000312B74 /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Translations;
+			sourceTree = "<group>";
+		};
+		4F3CE1DD2ACD990000312B74 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE1DF2ACD990000312B74 /* Modifier */,
+				4F3CE1DE2ACD990000312B74 /* View.swift */,
+				4F0CF6AE2ACF837E0089A6BE /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F3CE1DF2ACD990000312B74 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE1E02ACD990000312B74 /* ButtonWrapperModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		4F3CE1EC2ACD992000312B74 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE1D32ACD990000312B74 /* Enumerates */,
+				4F3CE1DD2ACD990000312B74 /* Extensions */,
+				4F3CE1D52ACD990000312B74 /* Helpers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4F3CE1ED2ACD996B00312B74 /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Translations;
+			sourceTree = "<group>";
+		};
+		4F3CE1F02ACD9A0900312B74 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4FFF61C12AC6D8DB002FF2C4 /* QuestodoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4F3CE1FC2ACDE65A00312B74 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE1FD2ACDE66800312B74 /* TodoFeature.swift */,
+				4F3CE1FF2ACDE67300312B74 /* TodoView.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		4F3CE2012ACDF84500312B74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F0CF6A72ACEE1B80089A6BE /* CharacterStyle.swift */,
+				4FA0A80F2ADA890C0075DDDA /* CharacterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F3EEB4F2ACAFBEF001ABEC8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4FFF61C52AC6D8DC002FF2C4 /* Assets.xcassets */,
+				4F3EEB512ACAFC04001ABEC8 /* Characters.xcassets */,
+				4F3CE1EE2ACD99D000312B74 /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4F9811DF2AD188EB00BCCD5E /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4F9811E02AD188F600BCCD5E /* ColorPicker */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		4F9811E02AD188F600BCCD5E /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				4F9811E12AD1890000BCCD5E /* ColorPicker.swift */,
+				4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		4FA0A8052ADA81810075DDDA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4FA0A8062ADA818E0075DDDA /* Character */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4FA0A8062ADA818E0075DDDA /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				4FA0A8072ADA819A0075DDDA /* Creation */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		4FA0A8072ADA819A0075DDDA /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				4FA0A8092ADA81B50075DDDA /* SkinPicker.swift */,
+				4FA0A80B2ADA82AA0075DDDA /* CharacterCreationView.swift */,
+				4FA0A80D2ADA854E0075DDDA /* CharacterView.swift */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		4FFF61B52AC6D8DB002FF2C4 = {
+			isa = PBXGroup;
+			children = (
+				4FFF61C02AC6D8DB002FF2C4 /* Questodo */,
+				4FFF61D12AC6D8DC002FF2C4 /* QuestodoTests */,
+				4FFF61DB2AC6D8DC002FF2C4 /* QuestodoUITests */,
+				4FFF61BF2AC6D8DB002FF2C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FFF61BF2AC6D8DB002FF2C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FFF61BE2AC6D8DB002FF2C4 /* Questodo.app */,
+				4FFF61CE2AC6D8DC002FF2C4 /* QuestodoTests.xctest */,
+				4FFF61D82AC6D8DC002FF2C4 /* QuestodoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FFF61C02AC6D8DB002FF2C4 /* Questodo */ = {
+			isa = PBXGroup;
+			children = (
+				4FFF61EB2AC6D8E3002FF2C4 /* App */,
+				4FFF61F02AC6D96B002FF2C4 /* Common */,
+				4F3CE1EC2ACD992000312B74 /* Utils */,
+				4F3CE1D82ACD990000312B74 /* Generated */,
+				4FFF61F82AC6DB47002FF2C4 /* Resources */,
+				4FFF61C72AC6D8DC002FF2C4 /* Preview Content */,
+			);
+			path = Questodo;
+			sourceTree = "<group>";
+		};
+		4FFF61C72AC6D8DC002FF2C4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4FFF61C82AC6D8DC002FF2C4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4FFF61D12AC6D8DC002FF2C4 /* QuestodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FFF61D22AC6D8DC002FF2C4 /* QuestodoTests.swift */,
+			);
+			path = QuestodoTests;
+			sourceTree = "<group>";
+		};
+		4FFF61DB2AC6D8DC002FF2C4 /* QuestodoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4FFF61DC2AC6D8DC002FF2C4 /* QuestodoUITests.swift */,
+				4FFF61DE2AC6D8DC002FF2C4 /* QuestodoUITestsLaunchTests.swift */,
+			);
+			path = QuestodoUITests;
+			sourceTree = "<group>";
+		};
+		4FFF61EB2AC6D8E3002FF2C4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4FA0A8052ADA81810075DDDA /* Application */,
+				4F9811DF2AD188EB00BCCD5E /* UIComponents */,
+				4FFF61EC2AC6D8E9002FF2C4 /* Features */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4FFF61EC2AC6D8E9002FF2C4 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				4F0CF6A92ACEE3180089A6BE /* CharacterCreator */,
+				4F3CE1F02ACD9A0900312B74 /* App */,
+				4F3CE1CE2ACD982A00312B74 /* MainHeader */,
+				4F3CE1FC2ACDE65A00312B74 /* Todo */,
+				4FFF61ED2AC6D8ED002FF2C4 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		4FFF61ED2AC6D8ED002FF2C4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4FFF61EE2AC6D8F5002FF2C4 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4FFF61F02AC6D96B002FF2C4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE2012ACDF84500312B74 /* Models */,
+				4F3CE1D12ACD98ED00312B74 /* AppFont.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4FFF61F82AC6DB47002FF2C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F3CE1ED2ACD996B00312B74 /* Translations */,
+				4F3EEB4F2ACAFBEF001ABEC8 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FFF61BD2AC6D8DB002FF2C4 /* Questodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FFF61E22AC6D8DC002FF2C4 /* Build configuration list for PBXNativeTarget "Questodo" */;
+			buildPhases = (
+				4FFF61BA2AC6D8DB002FF2C4 /* Sources */,
+				4FFF61BB2AC6D8DB002FF2C4 /* Frameworks */,
+				4FFF61BC2AC6D8DB002FF2C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Questodo;
+			packageProductDependencies = (
+				4F3CE1CC2ACD982300312B74 /* ComposableArchitecture */,
+			);
+			productName = Questodo;
+			productReference = 4FFF61BE2AC6D8DB002FF2C4 /* Questodo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FFF61CD2AC6D8DC002FF2C4 /* QuestodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FFF61E52AC6D8DC002FF2C4 /* Build configuration list for PBXNativeTarget "QuestodoTests" */;
+			buildPhases = (
+				4FFF61CA2AC6D8DC002FF2C4 /* Sources */,
+				4FFF61CB2AC6D8DC002FF2C4 /* Frameworks */,
+				4FFF61CC2AC6D8DC002FF2C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FFF61D02AC6D8DC002FF2C4 /* PBXTargetDependency */,
+			);
+			name = QuestodoTests;
+			productName = QuestodoTests;
+			productReference = 4FFF61CE2AC6D8DC002FF2C4 /* QuestodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4FFF61D72AC6D8DC002FF2C4 /* QuestodoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FFF61E82AC6D8DC002FF2C4 /* Build configuration list for PBXNativeTarget "QuestodoUITests" */;
+			buildPhases = (
+				4FFF61D42AC6D8DC002FF2C4 /* Sources */,
+				4FFF61D52AC6D8DC002FF2C4 /* Frameworks */,
+				4FFF61D62AC6D8DC002FF2C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FFF61DA2AC6D8DC002FF2C4 /* PBXTargetDependency */,
+			);
+			name = QuestodoUITests;
+			productName = QuestodoUITests;
+			productReference = 4FFF61D82AC6D8DC002FF2C4 /* QuestodoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FFF61B62AC6D8DB002FF2C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					4FFF61BD2AC6D8DB002FF2C4 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					4FFF61CD2AC6D8DC002FF2C4 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 4FFF61BD2AC6D8DB002FF2C4;
+					};
+					4FFF61D72AC6D8DC002FF2C4 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 4FFF61BD2AC6D8DB002FF2C4;
+					};
+				};
+			};
+			buildConfigurationList = 4FFF61B92AC6D8DB002FF2C4 /* Build configuration list for PBXProject "Questodo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FFF61B52AC6D8DB002FF2C4;
+			packageReferences = (
+				4F3CE1CB2ACD982300312B74 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 4FFF61BF2AC6D8DB002FF2C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FFF61BD2AC6D8DB002FF2C4 /* Questodo */,
+				4FFF61CD2AC6D8DC002FF2C4 /* QuestodoTests */,
+				4FFF61D72AC6D8DC002FF2C4 /* QuestodoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FFF61BC2AC6D8DB002FF2C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3EEB522ACAFC04001ABEC8 /* Characters.xcassets in Resources */,
+				4F3CE1EF2ACD99D000312B74 /* Colors.xcassets in Resources */,
+				4FFF61C92AC6D8DC002FF2C4 /* Preview Assets.xcassets in Resources */,
+				4FFF61C62AC6D8DC002FF2C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FFF61CC2AC6D8DC002FF2C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FFF61D62AC6D8DC002FF2C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FFF61BA2AC6D8DB002FF2C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3CE1E32ACD990000312B74 /* Constants.swift in Sources */,
+				4F0CF6AB2ACEE3270089A6BE /* CharacterCreatorFeature.swift in Sources */,
+				4F3CE1E92ACD990000312B74 /* ButtonWrapperModifier.swift in Sources */,
+				4FA0A80A2ADA81B50075DDDA /* SkinPicker.swift in Sources */,
+				4F3CE2002ACDE67300312B74 /* TodoView.swift in Sources */,
+				4F3CE1E82ACD990000312B74 /* View.swift in Sources */,
+				4F3CE1F42ACD9ADF00312B74 /* AQ.swift in Sources */,
+				4F3CE1D22ACD98ED00312B74 /* AppFont.swift in Sources */,
+				4FA0A80E2ADA854E0075DDDA /* CharacterView.swift in Sources */,
+				4F0CF6A82ACEE1B80089A6BE /* CharacterStyle.swift in Sources */,
+				4FA0A80C2ADA82AA0075DDDA /* CharacterCreationView.swift in Sources */,
+				4FA0A8142ADAB5030075DDDA /* CharacterHairColor.swift in Sources */,
+				4FFF61EF2AC6D8F5002FF2C4 /* HomeView.swift in Sources */,
+				4F3CE1F22ACD9A4600312B74 /* MainHeaderView.swift in Sources */,
+				4F9811E22AD1890000BCCD5E /* ColorPicker.swift in Sources */,
+				4F3CE1FE2ACDE66800312B74 /* TodoFeature.swift in Sources */,
+				4F3CE1E52ACD990000312B74 /* PreviewColorScheme.swift in Sources */,
+				4FA0A8122ADA89380075DDDA /* CharacterSkin.swift in Sources */,
+				4F0CF6AD2ACEE3570089A6BE /* CharacterCreatorView.swift in Sources */,
+				4F3CE1D02ACD984300312B74 /* MainHeaderFeature.swift in Sources */,
+				4F9811E42AD1891C00BCCD5E /* ColorPickerFeature.swift in Sources */,
+				4FA0A8102ADA890C0075DDDA /* CharacterModel.swift in Sources */,
+				4FFF61C22AC6D8DB002FF2C4 /* QuestodoApp.swift in Sources */,
+				4F0CF6AF2ACF837E0089A6BE /* Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FFF61CA2AC6D8DC002FF2C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FFF61D32AC6D8DC002FF2C4 /* QuestodoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FFF61D42AC6D8DC002FF2C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FFF61DF2AC6D8DC002FF2C4 /* QuestodoUITestsLaunchTests.swift in Sources */,
+				4FFF61DD2AC6D8DC002FF2C4 /* QuestodoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FFF61D02AC6D8DC002FF2C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FFF61BD2AC6D8DB002FF2C4 /* Questodo */;
+			targetProxy = 4FFF61CF2AC6D8DC002FF2C4 /* PBXContainerItemProxy */;
+		};
+		4FFF61DA2AC6D8DC002FF2C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FFF61BD2AC6D8DB002FF2C4 /* Questodo */;
+			targetProxy = 4FFF61D92AC6D8DC002FF2C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4FFF61E02AC6D8DC002FF2C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FFF61E12AC6D8DC002FF2C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FFF61E32AC6D8DC002FF2C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Questodo/Preview Content\"";
+				DEVELOPMENT_TEAM = PSU9VZHG7L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zwicker.Questodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FFF61E42AC6D8DC002FF2C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Questodo/Preview Content\"";
+				DEVELOPMENT_TEAM = PSU9VZHG7L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zwicker.Questodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4FFF61E62AC6D8DC002FF2C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSU9VZHG7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zwicker.QuestodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Questodo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Questodo";
+			};
+			name = Debug;
+		};
+		4FFF61E72AC6D8DC002FF2C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSU9VZHG7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zwicker.QuestodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Questodo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Questodo";
+			};
+			name = Release;
+		};
+		4FFF61E92AC6D8DC002FF2C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSU9VZHG7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zwicker.QuestodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Questodo;
+			};
+			name = Debug;
+		};
+		4FFF61EA2AC6D8DC002FF2C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSU9VZHG7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.zwicker.QuestodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Questodo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FFF61B92AC6D8DB002FF2C4 /* Build configuration list for PBXProject "Questodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FFF61E02AC6D8DC002FF2C4 /* Debug */,
+				4FFF61E12AC6D8DC002FF2C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FFF61E22AC6D8DC002FF2C4 /* Build configuration list for PBXNativeTarget "Questodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FFF61E32AC6D8DC002FF2C4 /* Debug */,
+				4FFF61E42AC6D8DC002FF2C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FFF61E52AC6D8DC002FF2C4 /* Build configuration list for PBXNativeTarget "QuestodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FFF61E62AC6D8DC002FF2C4 /* Debug */,
+				4FFF61E72AC6D8DC002FF2C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FFF61E82AC6D8DC002FF2C4 /* Build configuration list for PBXNativeTarget "QuestodoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FFF61E92AC6D8DC002FF2C4 /* Debug */,
+				4FFF61EA2AC6D8DC002FF2C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F3CE1CB2ACD982300312B74 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F3CE1CC2ACD982300312B74 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F3CE1CB2ACD982300312B74 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4FFF61B62AC6D8DB002FF2C4 /* Project object */;
+}
