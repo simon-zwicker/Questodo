@@ -25,10 +25,10 @@ struct CharacterCreationView: View {
                         Spacer()
                         HStack {
                             Image(systemName: "chevron.left")
-                                .foregroundColor(.mainBackground)
+                                .foregroundColor(.textBeige)
                                 .font(.Bold.big)
                                 .button {
-                                    character.hair.form = character.hair.form.previous
+                                    character.previousHair()
                                 }
                                 .offset(y: -30.0)
 
@@ -39,10 +39,10 @@ struct CharacterCreationView: View {
                             }
 
                             Image(systemName: "chevron.right")
-                                .foregroundColor(.mainBackground)
+                                .foregroundColor(.textBeige)
                                 .font(.Bold.big)
                                 .button {
-                                    character.hair.form = character.hair.form.next
+                                    character.nextHair()
                                 }
                                 .offset(y: -30.0)
                         }
@@ -51,6 +51,16 @@ struct CharacterCreationView: View {
                 .frame(maxWidth: UIScreen.main.bounds.width, minHeight: 100.0, maxHeight: 100.0)
 
                 VStack {
+                    VStack(spacing: 5.0) {
+                        Text("Change Body Type")
+                            .foregroundColor(.primaryButtonText)
+                            .font(.Bold.regular)
+                    }
+                    .button {
+                        character.changeBodyType()
+                    }
+                    .padding(.bottom, 30.0)
+
                     VStack(alignment: .leading, spacing: 5.0) {
                         Text("Skin color")
                             .font(.Bold.regular)
@@ -102,7 +112,7 @@ struct CharacterCreationView: View {
                     .background(Color.textNormal)
                     .cornerRadius(10.0)
                     .button {
-                        character.gender = character.gender == "m" ? "f": "m"
+
                     }
                     .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     .padding(.bottom, 20.0)

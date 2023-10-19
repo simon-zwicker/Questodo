@@ -49,13 +49,16 @@ internal enum Asset {
     }
     internal enum Equip {
       internal enum Chest {
-        internal static let chestDefault = ImageAsset(name: "chest_default")
+        internal static let chestFDefault = ImageAsset(name: "chest_f_default")
+        internal static let chestMDefault = ImageAsset(name: "chest_m_default")
       }
       internal enum Pant {
-        internal static let pantDefault = ImageAsset(name: "pant_default")
+        internal static let pantFDefault = ImageAsset(name: "pant_f_default")
+        internal static let pantMDefault = ImageAsset(name: "pant_m_default")
       }
       internal enum Shoe {
-        internal static let shoeDefault = ImageAsset(name: "shoe_default")
+        internal static let shoeFDefault = ImageAsset(name: "shoe_f_default")
+        internal static let shoeMDefault = ImageAsset(name: "shoe_m_default")
       }
     }
     internal enum Hairs {
@@ -427,6 +430,8 @@ internal enum Asset {
       }
     }
     internal static let mainBackground = ColorAsset(name: "mainBackground")
+    internal static let primaryButtonText = ColorAsset(name: "primaryButtonText")
+    internal static let textBeige = ColorAsset(name: "textBeige")
     internal static let textNormal = ColorAsset(name: "textNormal")
   }
 }

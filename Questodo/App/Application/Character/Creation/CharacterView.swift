@@ -20,23 +20,26 @@ struct CharacterView: View {
                 .resizable()
                 .scaledToFit()
 
-            character.skin.noseImage
+            Image("nose_\(character.skin.rawValue)")
                 .resizable()
                 .scaledToFit()
+
+            Image("pant_\(character.gender)_\(character.equip.pant.rawValue)")
+                .resizable()
+                .scaledToFit()
+                .offset(y: -2)
+
+            Image("chest_\(character.gender)_\(character.equip.pant.rawValue)")
+                .resizable()
+                .scaledToFit()
+                .offset(y: -3)
+
+            Image("shoe_\(character.gender)_\(character.equip.pant.rawValue)")
+                .resizable()
+                .scaledToFit()
+                .offset(y: -1)
 
             Image("hair_\(character.hair.form.rawValue)_\(character.gender)_\(character.hair.color.rawValue)")
-                .resizable()
-                .scaledToFit()
-
-            character.equip.chest.image
-                .resizable()
-                .scaledToFit()
-
-            character.equip.pant.image
-                .resizable()
-                .scaledToFit()
-
-            character.equip.shoe.image
                 .resizable()
                 .scaledToFit()
         }

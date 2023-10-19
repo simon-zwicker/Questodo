@@ -21,4 +21,16 @@ class CharacterModel {
         self.hair = hair
         self.equip = equip
     }
+
+    func changeBodyType() {
+        gender = gender == "m" ? "f": "m"
+    }
+
+    func nextHair() {
+        hair.form = hair.form.next
+    }
+
+    func previousHair() {
+        hair.form = hair.form.previous
+    }
 }
