@@ -15,28 +15,10 @@ enum CharacterSkin: String, CaseIterable {
 
     var skinColor: Color {
         switch self {
-        case .light: Asset.Colors.Character.skinLight.swiftUIColor
-        case .amber: Asset.Colors.Character.skinAmber.swiftUIColor
-        case .brown: Asset.Colors.Character.skinBrown.swiftUIColor
-        case .black: Asset.Colors.Character.skinBlack.swiftUIColor
-        }
-    }
-
-    var headImage: Image {
-        switch self {
-        case .light: Asset.Characters.Head.headLight.swiftUIImage
-        case .amber: Asset.Characters.Head.headAmber.swiftUIImage
-        case .brown: Asset.Characters.Head.headBrown.swiftUIImage
-        case .black: Asset.Characters.Head.headBlack.swiftUIImage
-        }
-    }
-
-    var bodyImage: Image {
-        switch self {
-        case .light: Asset.Characters.Body.bodyLight.swiftUIImage
-        case .amber: Asset.Characters.Body.bodyAmber.swiftUIImage
-        case .brown: Asset.Characters.Body.bodyBrown.swiftUIImage
-        case .black: Asset.Characters.Body.bodyBlack.swiftUIImage
+        case .light: Asset.Colors.Character.Skin.sLight.swiftUIColor
+        case .amber: Asset.Colors.Character.Skin.sAmber.swiftUIColor
+        case .brown: Asset.Colors.Character.Skin.sBrown.swiftUIColor
+        case .black: Asset.Colors.Character.Skin.sBlack.swiftUIColor
         }
     }
 

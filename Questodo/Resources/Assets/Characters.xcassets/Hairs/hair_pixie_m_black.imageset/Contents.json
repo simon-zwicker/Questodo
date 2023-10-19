@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "hair_pixie_m_black.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

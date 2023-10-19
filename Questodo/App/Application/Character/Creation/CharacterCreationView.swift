@@ -53,7 +53,7 @@ struct CharacterCreationView: View {
                 VStack {
                     VStack(alignment: .leading, spacing: 5.0) {
                         Text("Skin color")
-                            .font(.Bold.small)
+                            .font(.Bold.regular)
                             .foregroundStyle(.textNormal)
                             .padding(.leading, 15.0)
                         SkinPicker(selected: $character.skin)
@@ -61,7 +61,7 @@ struct CharacterCreationView: View {
 
                     VStack(alignment: .leading, spacing: 5.0) {
                         Text("Haircolor")
-                            .font(.Bold.small)
+                            .font(.Bold.regular)
                             .foregroundStyle(.textNormal)
                             .padding(.leading, 15.0)
                         HairColorPicker(selected: $character.hair.color)
@@ -102,7 +102,7 @@ struct CharacterCreationView: View {
                     .background(Color.textNormal)
                     .cornerRadius(10.0)
                     .button {
-
+                        character.gender = character.gender == "m" ? "f": "m"
                     }
                     .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     .padding(.bottom, 20.0)

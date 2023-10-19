@@ -26,7 +26,7 @@ struct CharacterCreatorView: View {
 
 #Preview {
     let store = Store(
-        initialState: CharacterCreatorFeature.State(picker: .init(selectedColor: Asset.Colors.Character.skinLight.swiftUIColor)),
+        initialState: CharacterCreatorFeature.State(picker: .init(selectedColor: Asset.Colors.Character.Skin.sLight.swiftUIColor)),
         reducer: CharacterCreatorFeature.init
     )
     return PreviewColorScheme(CharacterCreatorView(store: store))

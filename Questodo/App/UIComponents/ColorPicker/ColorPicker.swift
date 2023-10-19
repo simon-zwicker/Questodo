@@ -37,6 +37,6 @@ struct ColorPickerView: View {
 }
 
 #Preview {
-    let store = Store(initialState: .init(selectedColor: Asset.Colors.Character.skinLight.swiftUIColor), reducer: ColorPickerFeature.init)
+    let store = Store(initialState: .init(selectedColor: Asset.Colors.Character.Skin.sLight.swiftUIColor), reducer: ColorPickerFeature.init)
     return PreviewColorScheme(ColorPickerView(store: store))
 }

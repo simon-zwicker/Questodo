@@ -14,10 +14,10 @@ struct ColorPickerFeature: Reducer {
     struct State: Equatable {
         @BindingState var selectedColor: Color
         var colorPalette: [Color] = [
-            Asset.Colors.Character.skinLight.swiftUIColor,
-            Asset.Colors.Character.skinAmber.swiftUIColor,
-            Asset.Colors.Character.skinBrown.swiftUIColor,
-            Asset.Colors.Character.skinBlack.swiftUIColor
+            Asset.Colors.Character.Skin.sLight.swiftUIColor,
+            Asset.Colors.Character.Skin.sAmber.swiftUIColor,
+            Asset.Colors.Character.Skin.sBrown.swiftUIColor,
+            Asset.Colors.Character.Skin.sBlack.swiftUIColor
         ]
     }
 

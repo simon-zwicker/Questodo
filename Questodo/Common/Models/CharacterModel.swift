@@ -13,6 +13,7 @@ class CharacterModel {
     var skin: CharacterSkin
     var hair: CharacterHair
     var equip: CharacterEquip
+    var gender: String = "m"
 
     init(name: String = "", skin: CharacterSkin = .light, hair: CharacterHair = .init(), equip: CharacterEquip = .init()) {
         self.name = name

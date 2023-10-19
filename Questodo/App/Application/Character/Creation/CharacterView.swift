@@ -12,11 +12,11 @@ struct CharacterView: View {
 
     var body: some View {
         ZStack {
-            character.skin.bodyImage
+            Image("body_\(character.gender)_\(character.skin.rawValue)")
                 .resizable()
                 .scaledToFit()
 
-            character.skin.headImage
+            Image("head_\(character.gender)_\(character.skin.rawValue)")
                 .resizable()
                 .scaledToFit()
 
@@ -24,7 +24,7 @@ struct CharacterView: View {
                 .resizable()
                 .scaledToFit()
 
-            Image("hair_\(character.hair.form.rawValue)_\(character.hair.color.rawValue)")
+            Image("hair_\(character.hair.form.rawValue)_\(character.gender)_\(character.hair.color.rawValue)")
                 .resizable()
                 .scaledToFit()
 

@@ -31,22 +31,12 @@ struct HomeView: View {
 
                     HStack {
                         ZStack {
-                            Asset.Characters.Body.bodyLight.swiftUIImage
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 100.0)
-
-                            Asset.Characters.Head.headLight.swiftUIImage
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 100.0)
-
                             Asset.Assets.torsoLeatherBrown.swiftUIImage
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 100.0)
 
-                            Asset.Characters.Hairs.hairMessyBlack.swiftUIImage
+                            Asset.Characters.Hairs.hairSpikedMGreen.swiftUIImage
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 100.0)
