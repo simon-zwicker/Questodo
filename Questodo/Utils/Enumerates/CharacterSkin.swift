@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum CharacterSkin: String, CaseIterable {
+enum CharacterSkin: String, Equatable, CaseIterable {
     case light
     case amber
     case brown
@@ -29,5 +29,9 @@ enum CharacterSkin: String, CaseIterable {
         case .brown: Asset.Characters.Nose.noseBrown.swiftUIImage
         case .black: Asset.Characters.Nose.noseBlack.swiftUIImage
         }
+    }
+
+    static var allColors: [Color] {
+        return self.allCases.compactMap { $0.skinColor }
     }
 }

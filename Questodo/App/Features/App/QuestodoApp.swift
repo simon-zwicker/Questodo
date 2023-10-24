@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct QuestodoApp: App {
+
+    // MARK: - Store
+    let store: StoreOf<AppFeature> = .init(initialState: .init()) {
+        AppFeature()._printChanges()
+    }
+
     var body: some Scene {
         WindowGroup {
-            CharacterCreationView(character: .init())
+            AppView(store: store)
         }
     }
 }

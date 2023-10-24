@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CharacterHair: Identifiable {
+struct CharacterHair: Equatable, Identifiable {
     let id: UUID
     var form: CharacterHairType
     var color: CharacterHairColor
@@ -19,7 +19,7 @@ struct CharacterHair: Identifiable {
     }
 }
 
-struct CharacterEquip: Identifiable {
+struct CharacterEquip: Equatable, Identifiable {
     let id: UUID
     var chest: Equip.Chest
     var pant: Equip.Pant

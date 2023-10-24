@@ -13,10 +13,10 @@ struct PreviewColorScheme<Value: View>: View {
     init(_ view: Value) { self.view = view }
 
     var body: some View {
-        Group {
-            view.previewDisplayName("Light")
-            view.preferredColorScheme(.dark).previewDisplayName("Dark")
-        }
-        .previewLayout(.sizeThatFits)
+        view.previewDisplayName("Light")
+            .previewLayout(.sizeThatFits)
+        
+        view.preferredColorScheme(.dark).previewDisplayName("Dark")
+            .previewLayout(.sizeThatFits)
     }
 }

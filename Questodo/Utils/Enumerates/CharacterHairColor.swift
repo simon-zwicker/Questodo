@@ -96,4 +96,8 @@ enum CharacterHairColor: String, CaseIterable {
         case .blue: Asset.Colors.Character.Hair.hBlue.swiftUIColor
         }
     }
+
+    static var allColors: [Color] {
+        return self.allCases.compactMap { $0.hairColor }
+    }
 }

@@ -12,19 +12,20 @@ struct ColorPickerFeature: Reducer {
 
     // MARK: - State
     struct State: Equatable {
+        var title: String
         @BindingState var selectedColor: Color
-        var colorPalette: [Color] = [
-            Asset.Colors.Character.Skin.sLight.swiftUIColor,
-            Asset.Colors.Character.Skin.sAmber.swiftUIColor,
-            Asset.Colors.Character.Skin.sBrown.swiftUIColor,
-            Asset.Colors.Character.Skin.sBlack.swiftUIColor
-        ]
+        var palette: [Color]
     }
 
     // MARK: - Actions
     enum Action: Equatable, BindableAction {
         case binding(BindingAction<State>)
         case colorTapped(Color)
+        case delegate(Delegate)
+
+        enum Delegate: Equatable {
+            case colorChanged(Color)
+        }
     }
 
     // MARK: - Reducer
@@ -35,10 +36,11 @@ struct ColorPickerFeature: Reducer {
             switch action {
             case .colorTapped(let color):
                 state.selectedColor = color
+                return .send(.delegate(.colorChanged(color)))
 
             case .binding: return .none
+            case .delegate: return .none
             }
-            return .none
         }
     }
 }

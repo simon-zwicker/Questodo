@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0522D62AE690D100398F84 /* CharacterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0522D52AE690D100398F84 /* CharacterFeature.swift */; };
+		4F0522D82AE690DF00398F84 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0522D72AE690DF00398F84 /* CharacterView.swift */; };
+		4F0522DA2AE6918200398F84 /* CharacterDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0522D92AE6918200398F84 /* CharacterDraft.swift */; };
 		4F0CF6A82ACEE1B80089A6BE /* CharacterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CF6A72ACEE1B80089A6BE /* CharacterStyle.swift */; };
 		4F0CF6AB2ACEE3270089A6BE /* CharacterCreatorFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CF6AA2ACEE3270089A6BE /* CharacterCreatorFeature.swift */; };
 		4F0CF6AD2ACEE3570089A6BE /* CharacterCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CF6AC2ACEE3570089A6BE /* CharacterCreatorView.swift */; };
@@ -25,12 +28,11 @@
 		4F3CE2002ACDE67300312B74 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CE1FF2ACDE67300312B74 /* TodoView.swift */; };
 		4F3EEB522ACAFC04001ABEC8 /* Characters.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EEB512ACAFC04001ABEC8 /* Characters.xcassets */; };
 		4F4B36D62ADD66FF005E2AC1 /* CharacterEquip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B36D52ADD66FF005E2AC1 /* CharacterEquip.swift */; };
-		4F4B36D82ADD6E3C005E2AC1 /* HairColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B36D72ADD6E3C005E2AC1 /* HairColorPicker.swift */; };
+		4F64C38F2AE7D32F00FEDDF9 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C38E2AE7D32F00FEDDF9 /* AppFeature.swift */; };
+		4F64C3912AE7D33B00FEDDF9 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3902AE7D33B00FEDDF9 /* AppView.swift */; };
+		4F64C3932AE7D36C00FEDDF9 /* AppRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3922AE7D36C00FEDDF9 /* AppRoutes.swift */; };
 		4F9811E22AD1890000BCCD5E /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9811E12AD1890000BCCD5E /* ColorPicker.swift */; };
 		4F9811E42AD1891C00BCCD5E /* ColorPickerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */; };
-		4FA0A80A2ADA81B50075DDDA /* SkinPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A8092ADA81B50075DDDA /* SkinPicker.swift */; };
-		4FA0A80C2ADA82AA0075DDDA /* CharacterCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A80B2ADA82AA0075DDDA /* CharacterCreationView.swift */; };
-		4FA0A80E2ADA854E0075DDDA /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A80D2ADA854E0075DDDA /* CharacterView.swift */; };
 		4FA0A8102ADA890C0075DDDA /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A80F2ADA890C0075DDDA /* CharacterModel.swift */; };
 		4FA0A8122ADA89380075DDDA /* CharacterSkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A8112ADA89380075DDDA /* CharacterSkin.swift */; };
 		4FA0A8142ADAB5030075DDDA /* CharacterHairColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A8132ADAB5030075DDDA /* CharacterHairColor.swift */; };
@@ -61,6 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F0522D52AE690D100398F84 /* CharacterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFeature.swift; sourceTree = "<group>"; };
+		4F0522D72AE690DF00398F84 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		4F0522D92AE6918200398F84 /* CharacterDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDraft.swift; sourceTree = "<group>"; };
 		4F0CF6A72ACEE1B80089A6BE /* CharacterStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStyle.swift; sourceTree = "<group>"; };
 		4F0CF6AA2ACEE3270089A6BE /* CharacterCreatorFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreatorFeature.swift; sourceTree = "<group>"; };
 		4F0CF6AC2ACEE3570089A6BE /* CharacterCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreatorView.swift; sourceTree = "<group>"; };
@@ -78,12 +83,11 @@
 		4F3CE1FF2ACDE67300312B74 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		4F3EEB512ACAFC04001ABEC8 /* Characters.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Characters.xcassets; sourceTree = "<group>"; };
 		4F4B36D52ADD66FF005E2AC1 /* CharacterEquip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEquip.swift; sourceTree = "<group>"; };
-		4F4B36D72ADD6E3C005E2AC1 /* HairColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairColorPicker.swift; sourceTree = "<group>"; };
+		4F64C38E2AE7D32F00FEDDF9 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		4F64C3902AE7D33B00FEDDF9 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		4F64C3922AE7D36C00FEDDF9 /* AppRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoutes.swift; sourceTree = "<group>"; };
 		4F9811E12AD1890000BCCD5E /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerFeature.swift; sourceTree = "<group>"; };
-		4FA0A8092ADA81B50075DDDA /* SkinPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinPicker.swift; sourceTree = "<group>"; };
-		4FA0A80B2ADA82AA0075DDDA /* CharacterCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreationView.swift; sourceTree = "<group>"; };
-		4FA0A80D2ADA854E0075DDDA /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		4FA0A80F2ADA890C0075DDDA /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		4FA0A8112ADA89380075DDDA /* CharacterSkin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSkin.swift; sourceTree = "<group>"; };
 		4FA0A8132ADAB5030075DDDA /* CharacterHairColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHairColor.swift; sourceTree = "<group>"; };
@@ -125,6 +129,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F0522D32AE681E800398F84 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				4F9811E12AD1890000BCCD5E /* ColorPicker.swift */,
+				4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		4F0522D42AE6909F00398F84 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				4F0522D52AE690D100398F84 /* CharacterFeature.swift */,
+				4F0522D72AE690DF00398F84 /* CharacterView.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
 		4F0CF6A92ACEE3180089A6BE /* CharacterCreator */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +247,9 @@
 			isa = PBXGroup;
 			children = (
 				4FFF61C12AC6D8DB002FF2C4 /* QuestodoApp.swift */,
+				4F64C38E2AE7D32F00FEDDF9 /* AppFeature.swift */,
+				4F64C3902AE7D33B00FEDDF9 /* AppView.swift */,
+				4F64C3922AE7D36C00FEDDF9 /* AppRoutes.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -243,6 +268,7 @@
 			children = (
 				4F0CF6A72ACEE1B80089A6BE /* CharacterStyle.swift */,
 				4FA0A80F2ADA890C0075DDDA /* CharacterModel.swift */,
+				4F0522D92AE6918200398F84 /* CharacterDraft.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,45 +286,17 @@
 		4F9811DF2AD188EB00BCCD5E /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				4F9811E02AD188F600BCCD5E /* ColorPicker */,
+				4F9811E02AD188F600BCCD5E /* Picker */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
-		4F9811E02AD188F600BCCD5E /* ColorPicker */ = {
+		4F9811E02AD188F600BCCD5E /* Picker */ = {
 			isa = PBXGroup;
 			children = (
-				4F9811E12AD1890000BCCD5E /* ColorPicker.swift */,
-				4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */,
+				4F0522D32AE681E800398F84 /* ColorPicker */,
 			);
-			path = ColorPicker;
-			sourceTree = "<group>";
-		};
-		4FA0A8052ADA81810075DDDA /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				4FA0A8062ADA818E0075DDDA /* Character */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		4FA0A8062ADA818E0075DDDA /* Character */ = {
-			isa = PBXGroup;
-			children = (
-				4FA0A8072ADA819A0075DDDA /* Creation */,
-			);
-			path = Character;
-			sourceTree = "<group>";
-		};
-		4FA0A8072ADA819A0075DDDA /* Creation */ = {
-			isa = PBXGroup;
-			children = (
-				4FA0A8092ADA81B50075DDDA /* SkinPicker.swift */,
-				4FA0A80B2ADA82AA0075DDDA /* CharacterCreationView.swift */,
-				4FA0A80D2ADA854E0075DDDA /* CharacterView.swift */,
-				4F4B36D72ADD6E3C005E2AC1 /* HairColorPicker.swift */,
-			);
-			path = Creation;
+			path = Picker;
 			sourceTree = "<group>";
 		};
 		4FFF61B52AC6D8DB002FF2C4 = {
@@ -362,7 +360,6 @@
 		4FFF61EB2AC6D8E3002FF2C4 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				4FA0A8052ADA81810075DDDA /* Application */,
 				4F9811DF2AD188EB00BCCD5E /* UIComponents */,
 				4FFF61EC2AC6D8E9002FF2C4 /* Features */,
 			);
@@ -372,6 +369,7 @@
 		4FFF61EC2AC6D8E9002FF2C4 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4F0522D42AE6909F00398F84 /* Character */,
 				4F0CF6A92ACEE3180089A6BE /* CharacterCreator */,
 				4F3CE1F02ACD9A0900312B74 /* App */,
 				4F3CE1CE2ACD982A00312B74 /* MainHeader */,
@@ -548,18 +546,20 @@
 				4F3CE1E32ACD990000312B74 /* Constants.swift in Sources */,
 				4F0CF6AB2ACEE3270089A6BE /* CharacterCreatorFeature.swift in Sources */,
 				4F3CE1E92ACD990000312B74 /* ButtonWrapperModifier.swift in Sources */,
-				4FA0A80A2ADA81B50075DDDA /* SkinPicker.swift in Sources */,
 				4F3CE2002ACDE67300312B74 /* TodoView.swift in Sources */,
 				4F4B36D62ADD66FF005E2AC1 /* CharacterEquip.swift in Sources */,
+				4F64C38F2AE7D32F00FEDDF9 /* AppFeature.swift in Sources */,
+				4F0522D82AE690DF00398F84 /* CharacterView.swift in Sources */,
 				4F3CE1E82ACD990000312B74 /* View.swift in Sources */,
 				4F3CE1F42ACD9ADF00312B74 /* AQ.swift in Sources */,
 				4F3CE1D22ACD98ED00312B74 /* AppFont.swift in Sources */,
-				4FA0A80E2ADA854E0075DDDA /* CharacterView.swift in Sources */,
 				4F0CF6A82ACEE1B80089A6BE /* CharacterStyle.swift in Sources */,
-				4FA0A80C2ADA82AA0075DDDA /* CharacterCreationView.swift in Sources */,
+				4F64C3932AE7D36C00FEDDF9 /* AppRoutes.swift in Sources */,
 				4FA0A8142ADAB5030075DDDA /* CharacterHairColor.swift in Sources */,
 				4FFF61EF2AC6D8F5002FF2C4 /* HomeView.swift in Sources */,
+				4F64C3912AE7D33B00FEDDF9 /* AppView.swift in Sources */,
 				4F3CE1F22ACD9A4600312B74 /* MainHeaderView.swift in Sources */,
+				4F0522D62AE690D100398F84 /* CharacterFeature.swift in Sources */,
 				4F9811E22AD1890000BCCD5E /* ColorPicker.swift in Sources */,
 				4F3CE1FE2ACDE66800312B74 /* TodoFeature.swift in Sources */,
 				4F3CE1E52ACD990000312B74 /* PreviewColorScheme.swift in Sources */,
@@ -570,7 +570,7 @@
 				4FA0A8102ADA890C0075DDDA /* CharacterModel.swift in Sources */,
 				4FFF61C22AC6D8DB002FF2C4 /* QuestodoApp.swift in Sources */,
 				4F0CF6AF2ACF837E0089A6BE /* Color.swift in Sources */,
-				4F4B36D82ADD6E3C005E2AC1 /* HairColorPicker.swift in Sources */,
+				4F0522DA2AE6918200398F84 /* CharacterDraft.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
