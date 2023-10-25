@@ -36,8 +36,8 @@ struct ColorPickerView: View {
                     .padding(.leading, 15.0)
 
                 ScrollViewReader { proxy in
-                    ScrollView(.horizontal) {
-                        HStack(spacing: 20.0) {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 1.0) {
                             ForEach(viewStore.palette, id: \.self) { color in
                                 Circle()
                                     .fill(color)

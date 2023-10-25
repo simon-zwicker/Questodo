@@ -12,21 +12,18 @@ struct CharacterFeature: Reducer {
 
     // MARK: - State
     struct State: Equatable {
-        var draft: CharacterDraft
         var skin: CharacterSkin
         var hairType: CharacterHairType
         var hairColor: CharacterHairColor
-        var gender: String
-        var equip: CharacterEquip
+        var bodyType: Int
+        var equip: EquipFeature.State
 
-        init(draft: CharacterDraft = .init(id: UUID()), equip: CharacterEquip = .init()) {
-            self.draft = draft
-            self.equip = equip
-
-            skin = draft.skin
-            hairType = draft.hairType
-            hairColor = draft.hairColor
-            gender = draft.gender
+        init(character: CharacterDraft? = nil) {
+            self.skin = character?.skin ?? .light
+            self.hairType = character?.hairType ?? .page
+            self.hairColor = character?.hairColor ?? .ash
+            self.bodyType = character?.bodyType ?? 1
+            self.equip = .init(character: character)
         }
     }
 
@@ -34,13 +31,16 @@ struct CharacterFeature: Reducer {
     enum Action: Equatable {
         case nextHair
         case previousHair
-        case changeBodyType
+        case changeBodyType(Int)
         case changeHairColor(CharacterHairColor)
         case changeSkin(CharacterSkin)
+        case equip(EquipFeature.Action)
     }
 
     // MARK: - Reducer
     var body: some ReducerOf<Self> {
+        Scope(state: \.equip, action: /Action.equip, child: EquipFeature.init)
+
         Reduce { state, action in
             switch action {
             case .nextHair:
@@ -49,14 +49,17 @@ struct CharacterFeature: Reducer {
             case .previousHair:
                 state.hairType = state.hairType.previous
 
-            case .changeBodyType:
-                state.gender = state.gender == "m" ? "f": "m"
+            case .changeBodyType(let type):
+                state.bodyType = type
+                return .send(.equip(.changeBodyType(type)))
 
             case .changeHairColor(let hairColor):
                 state.hairColor = hairColor
 
             case .changeSkin(let skin):
                 state.skin = skin
+
+            default: return .none
             }
             return .none
         }

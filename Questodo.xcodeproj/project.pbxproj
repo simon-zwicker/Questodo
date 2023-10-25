@@ -10,7 +10,6 @@
 		4F0522D62AE690D100398F84 /* CharacterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0522D52AE690D100398F84 /* CharacterFeature.swift */; };
 		4F0522D82AE690DF00398F84 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0522D72AE690DF00398F84 /* CharacterView.swift */; };
 		4F0522DA2AE6918200398F84 /* CharacterDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0522D92AE6918200398F84 /* CharacterDraft.swift */; };
-		4F0CF6A82ACEE1B80089A6BE /* CharacterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CF6A72ACEE1B80089A6BE /* CharacterStyle.swift */; };
 		4F0CF6AB2ACEE3270089A6BE /* CharacterCreatorFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CF6AA2ACEE3270089A6BE /* CharacterCreatorFeature.swift */; };
 		4F0CF6AD2ACEE3570089A6BE /* CharacterCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CF6AC2ACEE3570089A6BE /* CharacterCreatorView.swift */; };
 		4F0CF6AF2ACF837E0089A6BE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CF6AE2ACF837E0089A6BE /* Color.swift */; };
@@ -31,9 +30,11 @@
 		4F64C38F2AE7D32F00FEDDF9 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C38E2AE7D32F00FEDDF9 /* AppFeature.swift */; };
 		4F64C3912AE7D33B00FEDDF9 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3902AE7D33B00FEDDF9 /* AppView.swift */; };
 		4F64C3932AE7D36C00FEDDF9 /* AppRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3922AE7D36C00FEDDF9 /* AppRoutes.swift */; };
+		4F64C3952AE9998B00FEDDF9 /* CharacterEquipDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3942AE9998B00FEDDF9 /* CharacterEquipDraft.swift */; };
+		4F64C3982AE99F4B00FEDDF9 /* EquipFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3972AE99F4A00FEDDF9 /* EquipFeature.swift */; };
+		4F64C39A2AE99F5B00FEDDF9 /* EquipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3992AE99F5B00FEDDF9 /* EquipView.swift */; };
 		4F9811E22AD1890000BCCD5E /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9811E12AD1890000BCCD5E /* ColorPicker.swift */; };
 		4F9811E42AD1891C00BCCD5E /* ColorPickerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */; };
-		4FA0A8102ADA890C0075DDDA /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A80F2ADA890C0075DDDA /* CharacterModel.swift */; };
 		4FA0A8122ADA89380075DDDA /* CharacterSkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A8112ADA89380075DDDA /* CharacterSkin.swift */; };
 		4FA0A8142ADAB5030075DDDA /* CharacterHairColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A8132ADAB5030075DDDA /* CharacterHairColor.swift */; };
 		4FFF61C22AC6D8DB002FF2C4 /* QuestodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF61C12AC6D8DB002FF2C4 /* QuestodoApp.swift */; };
@@ -66,7 +67,6 @@
 		4F0522D52AE690D100398F84 /* CharacterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFeature.swift; sourceTree = "<group>"; };
 		4F0522D72AE690DF00398F84 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		4F0522D92AE6918200398F84 /* CharacterDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDraft.swift; sourceTree = "<group>"; };
-		4F0CF6A72ACEE1B80089A6BE /* CharacterStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStyle.swift; sourceTree = "<group>"; };
 		4F0CF6AA2ACEE3270089A6BE /* CharacterCreatorFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreatorFeature.swift; sourceTree = "<group>"; };
 		4F0CF6AC2ACEE3570089A6BE /* CharacterCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCreatorView.swift; sourceTree = "<group>"; };
 		4F0CF6AE2ACF837E0089A6BE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -86,9 +86,11 @@
 		4F64C38E2AE7D32F00FEDDF9 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 		4F64C3902AE7D33B00FEDDF9 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		4F64C3922AE7D36C00FEDDF9 /* AppRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoutes.swift; sourceTree = "<group>"; };
+		4F64C3942AE9998B00FEDDF9 /* CharacterEquipDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEquipDraft.swift; sourceTree = "<group>"; };
+		4F64C3972AE99F4A00FEDDF9 /* EquipFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipFeature.swift; sourceTree = "<group>"; };
+		4F64C3992AE99F5B00FEDDF9 /* EquipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipView.swift; sourceTree = "<group>"; };
 		4F9811E12AD1890000BCCD5E /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerFeature.swift; sourceTree = "<group>"; };
-		4FA0A80F2ADA890C0075DDDA /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		4FA0A8112ADA89380075DDDA /* CharacterSkin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSkin.swift; sourceTree = "<group>"; };
 		4FA0A8132ADAB5030075DDDA /* CharacterHairColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHairColor.swift; sourceTree = "<group>"; };
 		4FFF61BE2AC6D8DB002FF2C4 /* Questodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Questodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +143,7 @@
 		4F0522D42AE6909F00398F84 /* Character */ = {
 			isa = PBXGroup;
 			children = (
+				4F64C3962AE99F3E00FEDDF9 /* Equip */,
 				4F0522D52AE690D100398F84 /* CharacterFeature.swift */,
 				4F0522D72AE690DF00398F84 /* CharacterView.swift */,
 			);
@@ -266,9 +269,8 @@
 		4F3CE2012ACDF84500312B74 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4F0CF6A72ACEE1B80089A6BE /* CharacterStyle.swift */,
-				4FA0A80F2ADA890C0075DDDA /* CharacterModel.swift */,
 				4F0522D92AE6918200398F84 /* CharacterDraft.swift */,
+				4F64C3942AE9998B00FEDDF9 /* CharacterEquipDraft.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,6 +283,15 @@
 				4F3CE1EE2ACD99D000312B74 /* Colors.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		4F64C3962AE99F3E00FEDDF9 /* Equip */ = {
+			isa = PBXGroup;
+			children = (
+				4F64C3972AE99F4A00FEDDF9 /* EquipFeature.swift */,
+				4F64C3992AE99F5B00FEDDF9 /* EquipView.swift */,
+			);
+			path = Equip;
 			sourceTree = "<group>";
 		};
 		4F9811DF2AD188EB00BCCD5E /* UIComponents */ = {
@@ -548,13 +559,14 @@
 				4F3CE1E92ACD990000312B74 /* ButtonWrapperModifier.swift in Sources */,
 				4F3CE2002ACDE67300312B74 /* TodoView.swift in Sources */,
 				4F4B36D62ADD66FF005E2AC1 /* CharacterEquip.swift in Sources */,
+				4F64C3982AE99F4B00FEDDF9 /* EquipFeature.swift in Sources */,
 				4F64C38F2AE7D32F00FEDDF9 /* AppFeature.swift in Sources */,
 				4F0522D82AE690DF00398F84 /* CharacterView.swift in Sources */,
 				4F3CE1E82ACD990000312B74 /* View.swift in Sources */,
 				4F3CE1F42ACD9ADF00312B74 /* AQ.swift in Sources */,
 				4F3CE1D22ACD98ED00312B74 /* AppFont.swift in Sources */,
-				4F0CF6A82ACEE1B80089A6BE /* CharacterStyle.swift in Sources */,
 				4F64C3932AE7D36C00FEDDF9 /* AppRoutes.swift in Sources */,
+				4F64C39A2AE99F5B00FEDDF9 /* EquipView.swift in Sources */,
 				4FA0A8142ADAB5030075DDDA /* CharacterHairColor.swift in Sources */,
 				4FFF61EF2AC6D8F5002FF2C4 /* HomeView.swift in Sources */,
 				4F64C3912AE7D33B00FEDDF9 /* AppView.swift in Sources */,
@@ -567,9 +579,9 @@
 				4F0CF6AD2ACEE3570089A6BE /* CharacterCreatorView.swift in Sources */,
 				4F3CE1D02ACD984300312B74 /* MainHeaderFeature.swift in Sources */,
 				4F9811E42AD1891C00BCCD5E /* ColorPickerFeature.swift in Sources */,
-				4FA0A8102ADA890C0075DDDA /* CharacterModel.swift in Sources */,
 				4FFF61C22AC6D8DB002FF2C4 /* QuestodoApp.swift in Sources */,
 				4F0CF6AF2ACF837E0089A6BE /* Color.swift in Sources */,
+				4F64C3952AE9998B00FEDDF9 /* CharacterEquipDraft.swift in Sources */,
 				4F0522DA2AE6918200398F84 /* CharacterDraft.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

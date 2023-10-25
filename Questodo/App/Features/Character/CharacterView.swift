@@ -17,11 +17,11 @@ struct CharacterView: View {
     var body: some View {
         WithViewStore(store, observe: { $0 }) { viewStore in
             ZStack {
-                Image("body_\(viewStore.gender)_\(viewStore.skin.rawValue)")
+                Image("body_\(viewStore.bodyType)_\(viewStore.skin.rawValue)")
                     .resizable()
                     .scaledToFit()
 
-                Image("head_\(viewStore.gender)_\(viewStore.skin.rawValue)")
+                Image("head_\(viewStore.bodyType)_\(viewStore.skin.rawValue)")
                     .resizable()
                     .scaledToFit()
 
@@ -29,22 +29,12 @@ struct CharacterView: View {
                     .resizable()
                     .scaledToFit()
 
-                Image("pant_\(viewStore.gender)_\(viewStore.equip.pant.rawValue)")
-                    .resizable()
-                    .scaledToFit()
-                    .offset(y: -2)
+                EquipView(store: store.scope(
+                    state: \.equip,
+                    action: CharacterFeature.Action.equip
+                ))
 
-                Image("chest_\(viewStore.gender)_\(viewStore.equip.pant.rawValue)")
-                    .resizable()
-                    .scaledToFit()
-                    .offset(y: -3)
-
-                Image("shoe_\(viewStore.gender)_\(viewStore.equip.pant.rawValue)")
-                    .resizable()
-                    .scaledToFit()
-                    .offset(y: -1)
-
-                Image("hair_\(viewStore.hairType.rawValue)_\(viewStore.gender)_\(viewStore.hairColor.rawValue)")
+                Image("hair_\(viewStore.hairType.rawValue)_\(viewStore.bodyType)_\(viewStore.hairColor.rawValue)")
                     .resizable()
                     .scaledToFit()
             }
@@ -53,6 +43,6 @@ struct CharacterView: View {
 }
 
 #Preview {
-    let store = Store(initialState: .init(draft: .init(id: UUID()), equip: .init()), reducer: CharacterFeature.init)
+    let store = Store(initialState: .init(character: .init()), reducer: CharacterFeature.init)
     return CharacterView(store: store)
 }

@@ -37,13 +37,13 @@ struct CharacterCreatorView: View {
                                     }
                                     .offset(y: -30.0)
 
-                                VStack {
+                                ZStack {
                                     CharacterView(store: store.scope(
-                                        state: \.myCharacter,
-                                        action: CharacterCreatorFeature.Action.myCharacter
+                                        state: \.character,
+                                        action: CharacterCreatorFeature.Action.character
                                     ))
-                                    .frame(height: 150.0)
                                 }
+                                .frame(height: 150.0)
 
                                 Image(systemName: "chevron.right")
                                     .foregroundColor(.textBeige)
