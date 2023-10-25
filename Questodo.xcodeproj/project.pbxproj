@@ -37,6 +37,17 @@
 		4F9811E42AD1891C00BCCD5E /* ColorPickerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */; };
 		4FA0A8122ADA89380075DDDA /* CharacterSkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A8112ADA89380075DDDA /* CharacterSkin.swift */; };
 		4FA0A8142ADAB5030075DDDA /* CharacterHairColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0A8132ADAB5030075DDDA /* CharacterHairColor.swift */; };
+		4FBE9CBC2AE9B92700A93768 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE9CBB2AE9B92700A93768 /* APIResult.swift */; };
+		4FBE9CBE2AE9B96500A93768 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE9CBD2AE9B96500A93768 /* APIError.swift */; };
+		4FBE9CC12AE9B99900A93768 /* CharacterJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE9CC02AE9B99900A93768 /* CharacterJSON.swift */; };
+		4FBE9CC42AE9BA0700A93768 /* ZNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 4FBE9CC32AE9BA0700A93768 /* ZNetwork */; };
+		4FBE9CC62AE9BA2300A93768 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE9CC52AE9BA2300A93768 /* APIEnvironment.swift */; };
+		4FBE9CC82AE9BAC500A93768 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE9CC72AE9BAC500A93768 /* Network.swift */; };
+		4FBE9CCA2AE9BB3D00A93768 /* QuestodoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE9CC92AE9BB3D00A93768 /* QuestodoAPI.swift */; };
+		4FBE9CCC2AE9BCCC00A93768 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE9CCB2AE9BCCC00A93768 /* Networking.swift */; };
+		4FBE9CCE2AE9BD7400A93768 /* QuestodoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE9CCD2AE9BD7400A93768 /* QuestodoClient.swift */; };
+		4FBE9CD02AE9BDEC00A93768 /* QuestodoClient_Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE9CCF2AE9BDEC00A93768 /* QuestodoClient_Live.swift */; };
+		4FBE9CD32AE9BE5600A93768 /* CharacterCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE9CD22AE9BE5600A93768 /* CharacterCall.swift */; };
 		4FFF61C22AC6D8DB002FF2C4 /* QuestodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF61C12AC6D8DB002FF2C4 /* QuestodoApp.swift */; };
 		4FFF61C62AC6D8DC002FF2C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFF61C52AC6D8DC002FF2C4 /* Assets.xcassets */; };
 		4FFF61C92AC6D8DC002FF2C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFF61C82AC6D8DC002FF2C4 /* Preview Assets.xcassets */; };
@@ -93,6 +104,16 @@
 		4F9811E32AD1891C00BCCD5E /* ColorPickerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerFeature.swift; sourceTree = "<group>"; };
 		4FA0A8112ADA89380075DDDA /* CharacterSkin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSkin.swift; sourceTree = "<group>"; };
 		4FA0A8132ADAB5030075DDDA /* CharacterHairColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHairColor.swift; sourceTree = "<group>"; };
+		4FBE9CBB2AE9B92700A93768 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		4FBE9CBD2AE9B96500A93768 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		4FBE9CC02AE9B99900A93768 /* CharacterJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterJSON.swift; sourceTree = "<group>"; };
+		4FBE9CC52AE9BA2300A93768 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
+		4FBE9CC72AE9BAC500A93768 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		4FBE9CC92AE9BB3D00A93768 /* QuestodoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestodoAPI.swift; sourceTree = "<group>"; };
+		4FBE9CCB2AE9BCCC00A93768 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		4FBE9CCD2AE9BD7400A93768 /* QuestodoClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestodoClient.swift; sourceTree = "<group>"; };
+		4FBE9CCF2AE9BDEC00A93768 /* QuestodoClient_Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestodoClient_Live.swift; sourceTree = "<group>"; };
+		4FBE9CD22AE9BE5600A93768 /* CharacterCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCall.swift; sourceTree = "<group>"; };
 		4FFF61BE2AC6D8DB002FF2C4 /* Questodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Questodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFF61C12AC6D8DB002FF2C4 /* QuestodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestodoApp.swift; sourceTree = "<group>"; };
 		4FFF61C52AC6D8DC002FF2C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FBE9CC42AE9BA0700A93768 /* ZNetwork in Frameworks */,
 				4F3CE1CD2ACD982300312B74 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +332,70 @@
 			path = Picker;
 			sourceTree = "<group>";
 		};
+		4FBE9CB62AE9B8D500A93768 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				4FBE9CCD2AE9BD7400A93768 /* QuestodoClient.swift */,
+				4FBE9CCF2AE9BDEC00A93768 /* QuestodoClient_Live.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		4FBE9CB72AE9B8EC00A93768 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4FBE9CBA2AE9B90B00A93768 /* Collections */,
+				4FBE9CB92AE9B8FF00A93768 /* ResponseModels */,
+				4FBE9CB82AE9B8F400A93768 /* RequestModels */,
+				4FBE9CC52AE9BA2300A93768 /* APIEnvironment.swift */,
+				4FBE9CC72AE9BAC500A93768 /* Network.swift */,
+				4FBE9CC92AE9BB3D00A93768 /* QuestodoAPI.swift */,
+				4FBE9CCB2AE9BCCC00A93768 /* Networking.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4FBE9CB82AE9B8F400A93768 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		4FBE9CB92AE9B8FF00A93768 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				4FBE9CBF2AE9B98400A93768 /* Models */,
+				4FBE9CBB2AE9B92700A93768 /* APIResult.swift */,
+				4FBE9CBD2AE9B96500A93768 /* APIError.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		4FBE9CBA2AE9B90B00A93768 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				4FBE9CD12AE9BE3B00A93768 /* Characters */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		4FBE9CBF2AE9B98400A93768 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FBE9CC02AE9B99900A93768 /* CharacterJSON.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4FBE9CD12AE9BE3B00A93768 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				4FBE9CD22AE9BE5600A93768 /* CharacterCall.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
 		4FFF61B52AC6D8DB002FF2C4 = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +457,7 @@
 		4FFF61EB2AC6D8E3002FF2C4 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4FBE9CB62AE9B8D500A93768 /* Dependencies */,
 				4F9811DF2AD188EB00BCCD5E /* UIComponents */,
 				4FFF61EC2AC6D8E9002FF2C4 /* Features */,
 			);
@@ -401,6 +488,7 @@
 		4FFF61F02AC6D96B002FF2C4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4FBE9CB72AE9B8EC00A93768 /* Network */,
 				4F3CE2012ACDF84500312B74 /* Models */,
 				4F3CE1D12ACD98ED00312B74 /* AppFont.swift */,
 			);
@@ -434,6 +522,7 @@
 			name = Questodo;
 			packageProductDependencies = (
 				4F3CE1CC2ACD982300312B74 /* ComposableArchitecture */,
+				4FBE9CC32AE9BA0700A93768 /* ZNetwork */,
 			);
 			productName = Questodo;
 			productReference = 4FFF61BE2AC6D8DB002FF2C4 /* Questodo.app */;
@@ -509,6 +598,7 @@
 			mainGroup = 4FFF61B52AC6D8DB002FF2C4;
 			packageReferences = (
 				4F3CE1CB2ACD982300312B74 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				4FBE9CC22AE9BA0700A93768 /* XCRemoteSwiftPackageReference "ZNetwork" */,
 			);
 			productRefGroup = 4FFF61BF2AC6D8DB002FF2C4 /* Products */;
 			projectDirPath = "";
@@ -555,15 +645,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F3CE1E32ACD990000312B74 /* Constants.swift in Sources */,
+				4FBE9CCE2AE9BD7400A93768 /* QuestodoClient.swift in Sources */,
+				4FBE9CD02AE9BDEC00A93768 /* QuestodoClient_Live.swift in Sources */,
 				4F0CF6AB2ACEE3270089A6BE /* CharacterCreatorFeature.swift in Sources */,
 				4F3CE1E92ACD990000312B74 /* ButtonWrapperModifier.swift in Sources */,
+				4FBE9CCC2AE9BCCC00A93768 /* Networking.swift in Sources */,
 				4F3CE2002ACDE67300312B74 /* TodoView.swift in Sources */,
 				4F4B36D62ADD66FF005E2AC1 /* CharacterEquip.swift in Sources */,
 				4F64C3982AE99F4B00FEDDF9 /* EquipFeature.swift in Sources */,
 				4F64C38F2AE7D32F00FEDDF9 /* AppFeature.swift in Sources */,
+				4FBE9CD32AE9BE5600A93768 /* CharacterCall.swift in Sources */,
 				4F0522D82AE690DF00398F84 /* CharacterView.swift in Sources */,
 				4F3CE1E82ACD990000312B74 /* View.swift in Sources */,
 				4F3CE1F42ACD9ADF00312B74 /* AQ.swift in Sources */,
+				4FBE9CC82AE9BAC500A93768 /* Network.swift in Sources */,
+				4FBE9CBE2AE9B96500A93768 /* APIError.swift in Sources */,
 				4F3CE1D22ACD98ED00312B74 /* AppFont.swift in Sources */,
 				4F64C3932AE7D36C00FEDDF9 /* AppRoutes.swift in Sources */,
 				4F64C39A2AE99F5B00FEDDF9 /* EquipView.swift in Sources */,
@@ -574,15 +670,19 @@
 				4F0522D62AE690D100398F84 /* CharacterFeature.swift in Sources */,
 				4F9811E22AD1890000BCCD5E /* ColorPicker.swift in Sources */,
 				4F3CE1FE2ACDE66800312B74 /* TodoFeature.swift in Sources */,
+				4FBE9CC12AE9B99900A93768 /* CharacterJSON.swift in Sources */,
 				4F3CE1E52ACD990000312B74 /* PreviewColorScheme.swift in Sources */,
+				4FBE9CBC2AE9B92700A93768 /* APIResult.swift in Sources */,
 				4FA0A8122ADA89380075DDDA /* CharacterSkin.swift in Sources */,
 				4F0CF6AD2ACEE3570089A6BE /* CharacterCreatorView.swift in Sources */,
 				4F3CE1D02ACD984300312B74 /* MainHeaderFeature.swift in Sources */,
 				4F9811E42AD1891C00BCCD5E /* ColorPickerFeature.swift in Sources */,
 				4FFF61C22AC6D8DB002FF2C4 /* QuestodoApp.swift in Sources */,
+				4FBE9CC62AE9BA2300A93768 /* APIEnvironment.swift in Sources */,
 				4F0CF6AF2ACF837E0089A6BE /* Color.swift in Sources */,
 				4F64C3952AE9998B00FEDDF9 /* CharacterEquipDraft.swift in Sources */,
 				4F0522DA2AE6918200398F84 /* CharacterDraft.swift in Sources */,
+				4FBE9CCA2AE9BB3D00A93768 /* QuestodoAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -924,6 +1024,14 @@
 				minimumVersion = 1.2.0;
 			};
 		};
+		4FBE9CC22AE9BA0700A93768 /* XCRemoteSwiftPackageReference "ZNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/szwicker/ZNetwork";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -931,6 +1039,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F3CE1CB2ACD982300312B74 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		4FBE9CC32AE9BA0700A93768 /* ZNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FBE9CC22AE9BA0700A93768 /* XCRemoteSwiftPackageReference "ZNetwork" */;
+			productName = ZNetwork;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -84,6 +84,9 @@ struct CharacterCreatorView: View {
                 }
             }
         }
+        .onAppear {
+            store.send(.appear)
+        }
     }
 }
 

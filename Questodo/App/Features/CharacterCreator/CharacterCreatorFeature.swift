@@ -40,7 +40,11 @@ struct CharacterCreatorFeature: Reducer {
         case nextHair
         case previousHair
         case changeBodyType
+        case appear
+        case fetchedCharacter(TaskResult<CharacterDraft>)
     }
+
+    @Dependency(\.questodo) var questodo
 
     // MARK: - Reducer
     var body: some ReducerOf<Self> {
@@ -52,6 +56,18 @@ struct CharacterCreatorFeature: Reducer {
 
         Reduce { state, action in
             switch action {
+            case .appear:
+                let id = "123dfr432gtrfs5"
+                return .run { send in
+                    await send(.fetchedCharacter(TaskResult { try await questodo.fetchCharacter(id) }))
+                }
+
+            case .fetchedCharacter(.success(let character)):
+                print(character)
+
+            case .fetchedCharacter(.failure(let error)):
+                print(error)
+
             case .nextHair:
                 return .send(.character(.nextHair))
 
@@ -72,6 +88,7 @@ struct CharacterCreatorFeature: Reducer {
 
             default: return .none
             }
+            return .none
         }
     }
 }

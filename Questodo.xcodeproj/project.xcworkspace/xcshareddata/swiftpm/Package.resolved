@@ -98,6 +98,15 @@
         "revision" : "23cbf2294e350076ea4dbd7d5d047c1e76b03631",
         "version" : "1.0.2"
       }
+    },
+    {
+      "identity" : "znetwork",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/szwicker/ZNetwork",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b3d0d68dadc80f4f50579c0bd3aca089e539c1c8"
+      }
     }
   ],
   "version" : 2
