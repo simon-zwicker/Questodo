@@ -6,9 +6,7 @@
 //
 
 extension AppFeature {
-
     struct Root {
-
         enum State: Equatable {
             case creator(CharacterCreatorFeature.State)
         }

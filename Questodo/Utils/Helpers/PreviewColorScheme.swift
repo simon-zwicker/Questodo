@@ -15,7 +15,7 @@ struct PreviewColorScheme<Value: View>: View {
     var body: some View {
         view.previewDisplayName("Light")
             .previewLayout(.sizeThatFits)
-        
+
         view.preferredColorScheme(.dark).previewDisplayName("Dark")
             .previewLayout(.sizeThatFits)
     }

@@ -14,7 +14,11 @@ class Network {
     let component: ZNetworkComponent
 
     init() {
-        component = ZNetworkComponent(scheme: APIEnvironment.dev.scheme, host: APIEnvironment.dev.host, path: APIEnvironment.dev.path)
+        component = ZNetworkComponent(
+            scheme: APIEnvironment.develop.scheme,
+            host: APIEnvironment.develop.host,
+            path: APIEnvironment.develop.path
+        )
         api = ZNetwork(with: component)
         api.logLevel = .debug
     }

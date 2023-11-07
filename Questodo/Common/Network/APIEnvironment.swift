@@ -9,7 +9,7 @@ import Foundation
 import ZNetwork
 
 enum APIEnvironment {
-    case dev
+    case develop
     case stage
     case prod
 }

@@ -44,7 +44,10 @@ struct ColorPickerView: View {
                                     .frame(width: 40.0, height: 40.0)
                                     .overlay(
                                         Circle()
-                                            .stroke(Color.white, lineWidth: viewStore.selected == color ? 3: 0)
+                                            .stroke(
+                                                Color.white,
+                                                lineWidth: viewStore.selected == color ? 3: 0
+                                            )
                                     )
                                     .button {
                                         viewStore.send(.colorTapped(color))

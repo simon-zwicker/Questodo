@@ -23,7 +23,11 @@ struct AppFeature: Reducer {
     var body: some ReducerOf<Self> {
         Scope(state: \.root, action: /AppFeature.Action.root) {
             EmptyReducer()
-                .ifCaseLet(/Root.State.creator, action: /Root.Action.creator, then: CharacterCreatorFeature.init)
+                .ifCaseLet(
+                    /Root.State.creator,
+                     action: /Root.Action.creator,
+                     then: CharacterCreatorFeature.init
+                )
         }
     }
 }

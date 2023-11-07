@@ -42,8 +42,8 @@ enum CharacterHairColor: String, CaseIterable {
     case ash
     case black
     case blonde
-    case dark_brown
-    case light_brown
+    case darkBrown = "dark_brown"
+    case lightBrown = "light_brown"
     case gray
     case redhead
     case white
@@ -61,7 +61,7 @@ enum CharacterHairColor: String, CaseIterable {
     case green
     case gold
     case ginger
-    case dark_gray
+    case darkGray = "dark_gray"
     case chestnut
     case carrot
     case blue
@@ -71,8 +71,8 @@ enum CharacterHairColor: String, CaseIterable {
         case .ash: Asset.Colors.Character.Hair.hAsh.swiftUIColor
         case .black: Asset.Colors.Character.Hair.hBlack.swiftUIColor
         case .blonde: Asset.Colors.Character.Hair.hBlonde.swiftUIColor
-        case .dark_brown: Asset.Colors.Character.Hair.hDarkBrown.swiftUIColor
-        case .light_brown: Asset.Colors.Character.Hair.hLightBrown.swiftUIColor
+        case .darkBrown: Asset.Colors.Character.Hair.hDarkBrown.swiftUIColor
+        case .lightBrown: Asset.Colors.Character.Hair.hLightBrown.swiftUIColor
         case .gray: Asset.Colors.Character.Hair.hGray.swiftUIColor
         case .redhead: Asset.Colors.Character.Hair.hRedhead.swiftUIColor
         case .white: Asset.Colors.Character.Hair.hWhite.swiftUIColor
@@ -90,7 +90,7 @@ enum CharacterHairColor: String, CaseIterable {
         case .green: Asset.Colors.Character.Hair.hGreen.swiftUIColor
         case .gold: Asset.Colors.Character.Hair.hGold.swiftUIColor
         case .ginger: Asset.Colors.Character.Hair.hGinger.swiftUIColor
-        case .dark_gray: Asset.Colors.Character.Hair.hDarkGray.swiftUIColor
+        case .darkGray: Asset.Colors.Character.Hair.hDarkGray.swiftUIColor
         case .chestnut: Asset.Colors.Character.Hair.hChestnut.swiftUIColor
         case .carrot: Asset.Colors.Character.Hair.hCarrot.swiftUIColor
         case .blue: Asset.Colors.Character.Hair.hBlue.swiftUIColor

@@ -18,7 +18,7 @@ struct CharacterCreatorView: View {
         ZStack {
             Color.mainBackground.ignoresSafeArea()
 
-            WithViewStore(store, observe: { $0 }) { viewStore in
+            WithViewStore(store, observe: { $0 }, content: { viewStore in
                 VStack(spacing: 20.0) {
                     ZStack {
                         Asset.Assets.bgForest.swiftUIImage
@@ -31,7 +31,7 @@ struct CharacterCreatorView: View {
                             HStack {
                                 Image(systemName: "chevron.left")
                                     .foregroundColor(.textBeige)
-                                    .font(.Bold.big)
+                                    .font(.Bold.title4)
                                     .button {
                                         viewStore.send(.previousHair)
                                     }
@@ -47,7 +47,7 @@ struct CharacterCreatorView: View {
 
                                 Image(systemName: "chevron.right")
                                     .foregroundColor(.textBeige)
-                                    .font(.Bold.big)
+                                    .font(.Bold.title4)
                                     .button {
                                         viewStore.send(.nextHair)
                                     }
@@ -82,7 +82,7 @@ struct CharacterCreatorView: View {
                     }
                     .padding(.top, 60.0)
                 }
-            }
+            })
         }
         .onAppear {
             store.send(.appear)

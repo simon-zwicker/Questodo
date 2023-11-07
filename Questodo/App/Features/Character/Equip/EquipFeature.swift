@@ -33,7 +33,7 @@ struct EquipFeature: Reducer {
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
-            case .changeBodyType(let type): 
+            case .changeBodyType(let type):
                 state.bodyType = type
             }
             return .none

@@ -15,7 +15,7 @@ struct EquipView: View {
 
     // MARK: - Body
     var body: some View {
-        WithViewStore(store, observe: { $0 }) { viewStore in
+        WithViewStore(store, observe: { $0 }, content: { viewStore in
             ZStack {
                 Image("pant_\(viewStore.bodyType)_\(viewStore.pant.rawValue)")
                     .resizable()
@@ -32,7 +32,7 @@ struct EquipView: View {
                     .scaledToFit()
                     .offset(y: -1)
             }
-        }
+        })
     }
 }
 

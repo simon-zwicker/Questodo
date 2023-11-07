@@ -15,7 +15,7 @@ struct CharacterView: View {
 
     // MARK: - Body
     var body: some View {
-        WithViewStore(store, observe: { $0 }) { viewStore in
+        WithViewStore(store, observe: { $0 }, content: { viewStore in
             ZStack {
                 Image("body_\(viewStore.bodyType)_\(viewStore.skin.rawValue)")
                     .resizable()
@@ -38,7 +38,7 @@ struct CharacterView: View {
                     .resizable()
                     .scaledToFit()
             }
-        }
+        })
     }
 }
 

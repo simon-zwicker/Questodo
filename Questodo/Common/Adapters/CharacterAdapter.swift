@@ -20,9 +20,8 @@ struct CharacterAdapter {
             name: response.name,
             skin: CharacterSkin(rawValue: response.skin) ?? .light,
             hairType: CharacterHairType(rawValue: response.hairType) ?? .spiked,
-            hairColor: CharacterHairColor(rawValue: response.hairColor) ?? .ash, 
+            hairColor: CharacterHairColor(rawValue: response.hairColor) ?? .ash,
             bodyType: response.bodyType
         )
     }
 }
-

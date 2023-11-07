@@ -14,7 +14,12 @@ struct CharacterEquipDraft {
     var pant: Equip.Pant
     var shoe: Equip.Shoe
 
-    init(id: UUID, chest: Equip.Chest = .standard, pant: Equip.Pant = .standard, shoe: Equip.Shoe = .standard) {
+    init(
+        id: UUID,
+        chest: Equip.Chest = .standard,
+        pant: Equip.Pant = .standard,
+        shoe: Equip.Shoe = .standard
+    ) {
         self.id = UUID()
         self.characterId = id
         self.chest = chest

@@ -75,12 +75,18 @@ struct CharacterCreatorFeature: Reducer {
                 return .send(.character(.previousHair))
 
             case .skinColor(.delegate(.colorChanged(let color))):
-                guard let choosenSkin = CharacterSkin.allCases.first(where: { $0.skinColor == color }) else { return .none}
-                return .send(.character(.changeSkin(choosenSkin)))
+                guard let skin = CharacterSkin.allCases.first(where: {
+                    $0.skinColor == color
+                }) else { return .none }
+
+                return .send(.character(.changeSkin(skin)))
 
             case .hairColor(.delegate(.colorChanged(let color))):
-                guard let choosenHairColor = CharacterHairColor.allCases.first(where: { $0.hairColor == color }) else { return .none}
-                return .send(.character(.changeHairColor(choosenHairColor)))
+                guard let hairColor = CharacterHairColor.allCases.first(where: {
+                    $0.hairColor == color
+                }) else { return .none }
+
+                return .send(.character(.changeHairColor(hairColor)))
 
             case .changeBodyType:
                 let bodyType = state.character.bodyType == 1 ? 2: 1
