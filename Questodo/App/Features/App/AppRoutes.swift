@@ -9,10 +9,12 @@ extension AppFeature {
     struct Root {
         enum State: Equatable {
             case creator(CharacterCreatorFeature.State)
+            case todo(TodoFeature.State)
         }
 
         enum Action: Equatable {
             case creator(CharacterCreatorFeature.Action)
+            case todo(TodoFeature.Action)
         }
     }
 }
