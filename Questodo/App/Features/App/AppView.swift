@@ -23,6 +23,8 @@ struct AppView: View {
                      action: AppFeature.Root.Action.creator,
                      then: CharacterCreatorView.init
                 )
+            default:
+                Text("TodoView")
             }
         }
         .background(Color.mainBackground)
