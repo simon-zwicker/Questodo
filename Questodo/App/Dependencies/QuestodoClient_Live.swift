@@ -14,14 +14,7 @@ extension QuestodoClient: DependencyKey {
             fetchCharacter: { characterId in
                 let call = CharacterCall()
                 let character = try await call.fetchCharacter(id: characterId)
-                return CharacterDraft(
-                    name: character.name,
-                    skin: CharacterSkin(rawValue: character.skin) ?? .light,
-                    hairType: CharacterHairType(rawValue: character.hairType) ?? .messy,
-                    hairColor: CharacterHairColor(rawValue: character.hairColor) ?? .ash,
-                    bodyType: character.bodyType,
-                    equip: nil
-                )
+                return await CharacterAdapter.convertObject(character)
             }
         )
     }
